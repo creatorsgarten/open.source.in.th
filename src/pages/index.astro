@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+
+<BaseLayout>
+	<section class="bg-white border-b-2 border-neutral-400">
+		<div id="hero" class="w-full flex flex-col justify-center items-center gap-8 h-[50vh] max-w-2xl mx-auto text-center shadow-sm">
+			<div class="grid gap-3">
+				<h1 class="text-4xl">a Humanistic Design System for Thais</h1>
+				<h4 class="text-xl">creating a fast and accessible website, powered by user research</h4>
+			</div>
+			<div class="flex gap-6">
+				<button class="primary">Get started</button>
+				<button>Research</button>
+			</div>
+		</div>
+		</section>
+	<section class="w-full max-w-6xl mx-auto my-8">
+		<div class="grid grid-cols-3 gap-8">
+			{
+				["Cores","Components","Templates"].map(x => 
+					<div class="grid gap-4 group hover:cursor-pointer">
+						<div class="aspect-video bg-neutral-200 w-full"></div>
+						<div class="grid gap-1">
+							<h1 class="text-2xl underline group-hover:decoration-[3px]  text-blue-800">{x}</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim sem non nulla cursus, ut pulvinar lorem pharetra. Suspendisse malesuada sodales nulla eu aliquet.</p>
+						</div>
+					</div>
+				)
+			}
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	button {
+		@apply px-4 py-2 border-2 rounded-md border-neutral-900 bg-neutral-100 hover:bg-neutral-200 focus:text-neutral-900 focus:bg-amber-300 active:ring-0 outline-none;
+	}
+	.primary {
+		@apply bg-blue-800 hover:bg-blue-900 text-neutral-50;
+	}
+	.el {
+		@apply w-full aspect-[21/9] flex justify-center items-center bg-blue-50 border-2 border-neutral-900;
+	}
+</style>

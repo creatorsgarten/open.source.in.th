@@ -1,0 +1,17 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import BaseHead from '../components/BaseHead.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead />
+	</head>
+	<body>
+		<Header />
+		<main class="grid gap-8"><slot /></main>
+		<Footer />
+	</body>
+</html>

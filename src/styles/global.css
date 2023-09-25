@@ -1,0 +1,7 @@
+body {
+  font-family: "Basier Square", "anuphan", sans-serif;
+}
+
+a {
+  @apply hover:bg-amber-300 hover:text-neutral-900;
+}
