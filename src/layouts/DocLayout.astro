@@ -1,0 +1,70 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import BaseHead from '../components/BaseHead.astro';
+
+
+const { menu } = Astro.props
+
+const defaultCat = "Main"
+
+const nav = menu.map((x) => {
+		const splitted = x.id.split('/')
+		const cat = splitted.length === 1 ? '' : splitted[0]
+		return { ...x, cat }
+	})
+	.reduce((acc, cur) => {
+		const cat = cur.cat || defaultCat
+		cat in acc ? acc[cat].push(cur.data.title) : (acc[cat] = [cur.data.title])
+		return acc
+	}, {})
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead />
+	</head>
+	<body>
+		<Header />
+		<main>
+            <div class="grid grid-cols-4 md:pt-12 max-w-6xl mx-auto mb-8">
+                <div class="hidden col-span-3 md:block md:col-span-1 ui-container">
+                    <div class="grid gap-8">
+                        {
+                            [
+                                [defaultCat, nav[defaultCat]], 
+                                ...Object.entries(nav).filter(([k, _]) => k !== defaultCat)
+                            ].map(([k, v]) => {
+                                return <ul class="list-none grid gap-3">
+                                    <li class="font-medium text-lg">{k}</li>
+                                    {v.map(x => {
+                                        return <li><a href="">{x}</a></li>
+                                    })}
+                                </ul>
+                            })
+                        }
+                    </div>
+                </div>
+                <div class="md:hidden border-b-2 text-lg border-neutral-400 bg-neutral-100 mb-8 py-3 ui-container col-span-4">
+                    Components
+                </div>
+                <div class="ui-container col-span-4 md:col-span-3 flex flex-col gap-8 text-lg leading-relaxed">
+                    <div class="prose prose-lg">
+                    <slot />
+                    </div>
+                </div>
+            </div>
+        </main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+    a {
+        @apply text-blue-800 hover:text-neutral-900 underline hover:decoration-2;
+    }
+    p {
+        max-width: 60ch;
+    }
+</style>

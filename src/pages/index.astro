@@ -4,8 +4,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 
 <BaseLayout>
-	<section class="bg-white border-b-2 border-neutral-400">
-		<div id="hero" class="w-full flex flex-col justify-center items-center text-center gap-8 h-[45vh] max-w-6xl mx-auto shadow-sm">
+	<section class="bg-white border-b-2 border-neutral-400 shadow-sm">
+		<div id="hero" class="ui-container flex flex-col justify-center items-center text-center gap-8 py-20">
 			<div class="grid gap-3">
 				<h1 class="text-4xl font-medium">a Humanistic Design System for Thais</h1>
 				<h4 class="text-xl">creating a fast and accessible website, powered by user research</h4>
@@ -16,9 +16,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			</div>
 		</div>
 		</section>
-	<section class="w-full max-w-6xl mx-auto grid gap-8">
+	<section class="ui-container grid gap-8">
 		<h1 class="text-3xl font-medium text-center">Building Blocks</h1>
-		<div class="grid grid-cols-3 gap-8">
+		<div class="grid md:grid-cols-3 gap-6 xl:gap-8">
 			{
 				["Cores","Components","Templates"].map(x => 
 					<div class="grid gap-4 group hover:cursor-pointer">
@@ -32,9 +32,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			}
 		</div>
 	</section>
-	<section class="w-full max-w-6xl mx-auto grid gap-4 text-lg justify-center bg-white py-12 border-2 border-neutral-400">
+	<section class="ui-container grid gap-4 text-lg justify-center bg-white py-12 border-2 border-neutral-400 shadow-sm">
 		<h1 class="text-3xl font-medium text-center">Get involved</h1>
-		<div class="w-2/3 mx-auto">
+		<div class="md:w-2/3 mx-auto">
 			<p class="mr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac consequat ex. Nam vulputate dictum est, vestibulum lacinia nibh gravida id. Sed ullamcorper tortor id viverra convallis. Suspendisse justo diam, pharetra sit amet eros eget.
 			</p>
 		</div>

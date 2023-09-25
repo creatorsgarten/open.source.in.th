@@ -6,3 +6,7 @@ body {
 a {
   @apply hover:bg-amber-300 active:ring-0 hover:text-neutral-900 focus:bg-amber-300 focus:text-neutral-900 outline-none;
 }
+
+.ui-container {
+  @apply w-full max-w-6xl mx-auto px-4 md:px-8 lg:px-6;
+}
