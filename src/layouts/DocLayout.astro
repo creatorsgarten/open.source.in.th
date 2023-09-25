@@ -4,7 +4,7 @@ import Footer from '../components/Footer.astro';
 import BaseHead from '../components/BaseHead.astro';
 
 
-const { menu } = Astro.props
+const { menu, doc } = Astro.props
 
 const defaultCat = "Main"
 
@@ -15,7 +15,7 @@ const nav = menu.map((x) => {
 	})
 	.reduce((acc, cur) => {
 		const cat = cur.cat || defaultCat
-		cat in acc ? acc[cat].push(cur.data.title) : (acc[cat] = [cur.data.title])
+		cat in acc ? acc[cat].push([cur.data.title, cur.slug]) : (acc[cat] = [[cur.data.title, cur.slug]])
 		return acc
 	}, {})
 ---
@@ -28,8 +28,11 @@ const nav = menu.map((x) => {
 	<body>
 		<Header />
 		<main>
-            <div class="grid grid-cols-4 md:pt-12 max-w-6xl mx-auto mb-8">
-                <div class="hidden col-span-3 md:block md:col-span-1 ui-container">
+            <div class="ui-container md:hidden border-b-2 text-lg border-neutral-400 bg-neutral-100 mb-8 py-3 col-span-4">
+                Components
+            </div>
+            <div class="grid grid-cols-4 md:pt-12 ui-container mb-4">
+                <div class="hidden col-span-3 md:block md:col-span-1">
                     <div class="grid gap-8">
                         {
                             [
@@ -38,18 +41,15 @@ const nav = menu.map((x) => {
                             ].map(([k, v]) => {
                                 return <ul class="list-none grid gap-3">
                                     <li class="font-medium text-lg">{k}</li>
-                                    {v.map(x => {
-                                        return <li><a href="">{x}</a></li>
+                                    {v.map(([title, slug]) => {
+                                        return <li><a href={`/${doc}/${slug}`}>{title}</a></li>
                                     })}
                                 </ul>
                             })
                         }
                     </div>
                 </div>
-                <div class="md:hidden border-b-2 text-lg border-neutral-400 bg-neutral-100 mb-8 py-3 ui-container col-span-4">
-                    Components
-                </div>
-                <div class="ui-container col-span-4 md:col-span-3 flex flex-col gap-8 text-lg leading-relaxed">
+                <div class="col-span-4 md:col-span-3 flex flex-col gap-8 text-lg leading-relaxed">
                     <div class="prose prose-lg">
                     <slot />
                     </div>
