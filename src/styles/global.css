@@ -1,7 +1,8 @@
 body {
-  font-family: "Basier Square", "anuphan", sans-serif;
+  font-family: "Basier Square", "Anuphan", sans-serif;
+  @apply bg-neutral-50;
 }
 
 a {
-  @apply hover:bg-amber-300 hover:text-neutral-900;
+  @apply hover:bg-amber-300 active:ring-0 hover:text-neutral-900 focus:bg-amber-300 focus:text-neutral-900 outline-none;
 }
