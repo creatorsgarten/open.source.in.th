@@ -1,31 +1,67 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const eventList = [{
+	name: "Hacktoberfest Thailand",
+	date: "21",
+	location: "Royal Paragon Hall"
+}, {
+	name: "Garden Zero Club Meetup",
+	date: "7",
+	location: "TBA"
+}, {
+	name: "Placeholder #1",
+	date: "10",
+	location: "TBA"
+}]
 ---
 
-
 <BaseLayout>
-	<section class="bg-white border-b-2 border-neutral-400 shadow-sm">
-		<div id="hero" class="ui-container flex flex-col justify-center items-center text-center gap-8 py-20">
+	<section class="bg-white border-b-2 border-neutral-400 shadow-sm mesh-3">
+		<div id="hero" class="ui-container flex flex-col justify-center items-start gap-8 py-20">
 			<div class="grid gap-3">
-				<h1 class="text-4xl font-medium">a Humanistic Design System for Thais</h1>
-				<h4 class="text-xl">creating a fast and accessible website, powered by user research</h4>
+				<h1 class="text-6xl font-medium">Festival '23</h1>
+				<h4 class="text-xl">Let's code together.</h4>
 			</div>
 			<div class="flex gap-6">
-				<button class="primary">Get started</button>
-				<button>Research</button>
+				<button class="primary">Participate</button>
+				<button>About</button>
 			</div>
 		</div>
 		</section>
 	<section class="ui-container grid gap-8">
-		<h1 class="text-3xl font-medium text-center">Building Blocks</h1>
+		<h1 class="text-3xl font-medium">Write codes</h1>
+		<div class="grid md:grid-cols-3 gap-6 xl:gap-12">
+			{
+				["Elysia", "ThaiUI", "Contentsgarten", "Cluster.wiki", "PyThaiNLP", "toSkoy"].map(x => 
+					<div class="grid gap-4 group hover:cursor-pointer pt-4 border-t-2 border-neutral-300">
+						<div class="grid gap-2">
+							<h1 class="text-2xl underline group-hover:decoration-[3px] font-medium text-blue-800 group-hover:text-blue-900">{x}</h1>
+							<p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
+				)
+			}
+		</div>
+	</section>
+	<section class="ui-container flex flex-col justify-center items-center border-2 border-neutral-300 px-4 py-6 bg-white">
+		<div class=" text-lg">
+		Explore More Projects on 
+		<a href="" class="underline">
+			Thai Open Source Web Ring!
+		</a>
+	</div>
+	</section>
+	<section class="ui-container grid gap-8">
+		<h1 class="text-3xl font-medium">Join events</h1>
 		<div class="grid md:grid-cols-3 gap-6 xl:gap-8">
 			{
-				["Cores","Components","Templates"].map(x => 
+				eventList.map(x => 
 					<div class="grid gap-4 group hover:cursor-pointer">
 						<div class="aspect-video bg-neutral-300 w-full"></div>
 						<div class="grid gap-2">
-							<h1 class="text-2xl underline group-hover:decoration-[3px] font-medium text-blue-800 group-hover:text-blue-900">{x}</h1>
-							<p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim sem non nulla cursus, ut pulvinar lorem pharetra.</p>
+							<h1 class="text-2xl underline group-hover:decoration-[3px] font-medium text-blue-800 group-hover:text-blue-900">{x.name}</h1>
+							<h5 class="">{x.date} October '23 | {x.location}</h5>
 						</div>
 					</div>
 				)
@@ -33,10 +69,34 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		</div>
 	</section>
 	<section class="ui-container grid gap-4 text-lg justify-center bg-white py-12 border-2 border-neutral-400 shadow-sm">
-		<h1 class="text-3xl font-medium text-center">Get involved</h1>
-		<div class="md:w-2/3 mx-auto">
+		<h1 class="text-3xl font-medium text-center">Participate</h1>
+		<div class="md:w-2/3 mx-auto text-center">
 			<p class="mr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac consequat ex. Nam vulputate dictum est, vestibulum lacinia nibh gravida id. Sed ullamcorper tortor id viverra convallis. Suspendisse justo diam, pharetra sit amet eros eget.
 			</p>
+		</div>
+	</section>
+	<section class="ui-container grid grid-cols-1 md:grid-cols-4 gap-10 text-lg">
+		<div class="md:col-span-3 flex flex-col gap-4">
+			<h1 class="text-2xl font-medium">Presented by</h1>
+			<div class="grid grid-cols-3 gap-4">
+				<div class="w-full aspect-video bg-neutral-300" />
+				<div class="w-full aspect-video bg-neutral-300" />
+				<div class="w-full aspect-video bg-neutral-300" />
+				<div class="w-full aspect-video bg-neutral-300" />
+				<div class="w-full aspect-video bg-neutral-300" />
+				<div class="w-full aspect-video bg-neutral-300" />
+			</div>
+			</div>
+		</div>
+		<div class="flex flex-col gap-4">
+			<h1 class="text-2xl font-medium">Partnered with us</h1>
+			<div class="">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac consequat ex. Nam vulputate dictum est, vestibulum lacinia nibh gravida id.
+			</div>
+			<div>
+				<button class="primary">Join now!</button>
+			</div>
+			</div>
 		</div>
 	</section>
 </BaseLayout>
@@ -51,4 +111,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 	.el {
 		@apply w-full aspect-[21/9] flex justify-center items-center bg-blue-50 border-2 border-neutral-900;
 	}
+	.mesh-3 {
+    background: fixed;
+    background-color: rgb(252, 165, 165);
+    background-image: radial-gradient(at 79% 79%, rgb(236, 254, 255) 0, transparent 59%),
+      radial-gradient(at 22% 84%, rgb(254, 249, 195) 0, transparent 47%),
+      radial-gradient(at 55% 48%, rgb(136, 19, 55) 0, transparent 47%),
+      radial-gradient(at 81% 52%, rgb(7, 89, 133) 0, transparent 52%),
+      radial-gradient(at 19% 2%, rgb(147, 197, 253) 0, transparent 35%);
+    /* radial-gradient(at 17% 34%, rgb(5, 150, 105) 0, transparent 6%); */
+  }
 </style>
