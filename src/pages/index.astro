@@ -21,69 +21,66 @@ const eventList = [
 ---
 
 <BaseLayout>
-	<section class="mesh-3 border-b-2 border-neutral-400 bg-white shadow-sm">
-		<div id="hero" class="ui-container flex flex-col items-start justify-center gap-8 py-20">
-			<div class="grid gap-3">
-				<h1 class="text-6xl font-medium">Festival '23</h1>
-				<h4 class="w-2/3 text-xl leading-relaxed">
-					A month-long festival to celebrate open source culture in Bangkok and Thailand. Let's code
-					together!
-				</h4>
-			</div>
-			<div class="flex gap-6">
-				<button class="primary">Participate</button>
-				<button>About</button>
-			</div>
-		</div>
+	<section class="ui-container flex flex-col items-center justify-center gap-12 pt-10 lg:pt-24">
+		<img src="/full.svg" alt="" class="w-full p-2 lg:w-3/4" />
+		<h4 class="w-11/12 text-center text-base leading-relaxed text-neutral-700 md:w-2/3 lg:text-xl">
+			A month-long festival to celebrate open source culture in Bangkok and Thailand. Let's code
+			together!
+		</h4>
 	</section>
 	<section class="ui-container grid gap-8">
-		<h1 class="text-3xl font-medium">1. Write codes</h1>
-		<div class="grid gap-6 md:grid-cols-3 xl:gap-12">
+		<h1 class="text-center text-3xl font-medium">1. Write codes 💻</h1>
+		<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 			{
-				['Elysia', 'ThaiUI', 'Contentsgarten', 'Cluster.wiki', 'PyThaiNLP', 'toSkoy'].map((x) => (
-					<div class="group grid gap-4 border-t-2 border-neutral-300 pt-4 hover:cursor-pointer">
-						<div class="grid gap-2">
-							<h1 class="text-2xl font-medium text-blue-800 underline group-hover:text-blue-900 group-hover:decoration-[3px]">
-								{x}
-							</h1>
-							<p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				[
+					'Elysia',
+					'ThaiUI',
+					'GardenZero',
+					'Contentsgarten',
+					'ThaiPyNLP',
+					'Waifu',
+					'OKNIZE',
+					'New'
+				].map((x) => {
+					return (
+						<div class="flex flex-col gap-4 rounded-sm border border-[#909C46]/30 bg-white px-4 py-6 shadow-sm">
+							<div class="grid gap-1">
+								<h3 class="text-2xl font-medium">{x}</h3>
+								<p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
 						</div>
-					</div>
-				))
+					)
+				})
 			}
 		</div>
-	</section>
-	<section
-		class="ui-container flex flex-col items-center justify-center border-2 border-neutral-300 bg-white px-4 py-6"
-	>
-		<div class="text-lg">
+		<div class="text-center text-lg">
 			Explore More Projects on
 			<a href="" class="underline"> Thai Open Source Web Ring!</a>
 		</div>
 	</section>
 	<section class="ui-container grid gap-8">
-		<h1 class="text-3xl font-medium">2. Join events</h1>
-		<div class="grid gap-6 md:grid-cols-3 xl:gap-8">
+		<h1 class="text-center text-3xl font-medium">2. Join events 🙌</h1>
+		<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-10">
 			{
-				eventList.map((x) => (
-					<div class="group grid gap-4 hover:cursor-pointer">
-						<div class="aspect-video w-full bg-neutral-300" />
-						<div class="grid gap-2">
-							<h1 class="text-2xl font-medium text-blue-800 underline group-hover:text-blue-900 group-hover:decoration-[3px]">
-								{x.name}
-							</h1>
-							<h5 class="">
-								{x.date} October '23 | {x.location}
-							</h5>
+				[...eventList, ...eventList].map((x) => {
+					return (
+						<div class="flex flex-col gap-4">
+							<div class="aspect-video w-full bg-neutral-200" />
+							<div class="grid gap-1">
+								<h3 class="text-xl font-medium">{x.name}</h3>
+								<div>
+									{x.location} | {x.date} October '23
+								</div>
+							</div>
 						</div>
-					</div>
-				))
+					)
+				})
 			}
 		</div>
 	</section>
 	<section class="ui-container grid gap-6 text-lg">
-		<h1 class="text-3xl font-medium">3. Get our swags</h1>
-		<div class="flex flex-wrap items-center gap-3 text-lg">
+		<h1 class="text-center text-3xl font-medium">3. Get our swags! 👾</h1>
+		<div class="flex flex-wrap items-center justify-center gap-3 text-lg">
 			<!-- <p>Tshirts, Keychains, Stickers, and more. <a href="" class="underline text-blue-800">Learn how.</a>
 			</p> -->
 			<div class="rounded-full border-2 border-neutral-300 bg-white px-3 py-[0.15rem]">
@@ -99,12 +96,18 @@ const eventList = [
 				and more!
 			</div>
 		</div>
-		<div><a href="" class="text-blue-800 underline">Learn how.</a></div>
 	</section>
+	<div class="flex justify-center">
+		<a
+			href=""
+			class="rounded-full bg-gradient-to-br from-neutral-800 to-neutral-900 px-6 py-3 text-xl text-neutral-50 shadow-sm transition-all hover:scale-[1.02] hover:text-neutral-50 hover:shadow-md"
+			>Join Now</a
+		>
+	</div>
 	<section
-		class="ui-container grid grid-cols-1 gap-10 border-y-2 border-neutral-300 py-12 text-lg md:grid-cols-4"
+		class="ui-container grid grid-cols-1 gap-10 border-y-2 border-neutral-300 py-12 text-lg lg:grid-cols-4"
 	>
-		<div class="flex flex-col gap-4 md:col-span-3">
+		<div class="flex flex-col gap-4 lg:col-span-3">
 			<h1 class="text-2xl font-medium">Presented by</h1>
 			<div class="grid grid-cols-3 gap-4">
 				<div class="aspect-video w-full bg-neutral-300"></div>
@@ -120,9 +123,6 @@ const eventList = [
 			<div class="">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac consequat ex. Nam
 				vulputate dictum est, vestibulum lacinia nibh gravida id.
-			</div>
-			<div>
-				<button class="primary">Join now!</button>
 			</div>
 		</div>
 	</section>

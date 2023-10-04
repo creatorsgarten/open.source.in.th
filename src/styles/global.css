@@ -4,7 +4,7 @@ body {
 }
 
 a {
-	@apply outline-none hover:bg-amber-300 hover:text-neutral-900 focus:bg-amber-300 focus:text-neutral-900 active:ring-0;
+	@apply from-amber-200 to-amber-300 outline-none hover:bg-gradient-to-br hover:text-neutral-900 focus:bg-gradient-to-br focus:text-neutral-900 active:ring-0;
 }
 
 .ui-container {
