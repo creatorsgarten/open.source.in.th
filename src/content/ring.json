@@ -1,0 +1,29 @@
+{
+	"ring": [
+		{
+			"name": "Thai Open Source Ring",
+			"git": "21",
+			"description": ""
+		},
+		{
+			"name": "ThaiUI",
+			"git": "21",
+			"description": "Royal Paragon Hall"
+		},
+		{
+			"name": "Elysia",
+			"git": "21",
+			"description": "Royal Paragon Hall"
+		},
+		{
+			"name": "Contentsgarten",
+			"git": "21",
+			"description": "Royal Paragon Hall"
+		},
+		{
+			"name": "Oknize",
+			"git": "21",
+			"description": "Royal Paragon Hall"
+		}
+	]
+}

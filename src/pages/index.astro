@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import ring from '../content/ring.json'
 
 const eventList = [
 	{
@@ -32,20 +33,11 @@ const eventList = [
 		<h1 class="text-center text-3xl font-medium">1. Write codes 💻</h1>
 		<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 			{
-				[
-					'Elysia',
-					'ThaiUI',
-					'GardenZero',
-					'Contentsgarten',
-					'ThaiPyNLP',
-					'Waifu',
-					'OKNIZE',
-					'New'
-				].map((x) => {
+				ring.ring.map((x) => {
 					return (
-						<div class="flex flex-col gap-4 rounded-sm border border-[#909C46]/30 bg-white px-4 py-6 shadow-sm">
+						<div class="flex flex-col gap-4 rounded-sm border border-[#909C46]/30 bg-white p-6 shadow-sm">
 							<div class="grid gap-1">
-								<h3 class="text-2xl font-medium">{x}</h3>
+								<h3 class="text-2xl font-medium">{x.name}</h3>
 								<p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
