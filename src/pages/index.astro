@@ -1,129 +1,154 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro'
 
-const eventList = [{
-	name: "Hacktoberfest Thailand",
-	date: "21",
-	location: "Royal Paragon Hall"
-}, {
-	name: "Garden Zero Club Meetup",
-	date: "7",
-	location: "TBA"
-}, {
-	name: "Placeholder #1",
-	date: "10",
-	location: "TBA"
-}]
+const eventList = [
+	{
+		name: 'Hacktoberfest Thailand',
+		date: '21',
+		location: 'Royal Paragon Hall'
+	},
+	{
+		name: 'Garden Zero Club Meetup',
+		date: '7',
+		location: 'TBA'
+	},
+	{
+		name: 'Placeholder #1',
+		date: '10',
+		location: 'TBA'
+	}
+]
 ---
 
 <BaseLayout>
-	<section class="bg-white border-b-2 border-neutral-400 shadow-sm mesh-3">
-		<div id="hero" class="ui-container flex flex-col justify-center items-start gap-8 py-20">
+	<section class="mesh-3 border-b-2 border-neutral-400 bg-white shadow-sm">
+		<div id="hero" class="ui-container flex flex-col items-start justify-center gap-8 py-20">
 			<div class="grid gap-3">
 				<h1 class="text-6xl font-medium">Festival '23</h1>
-				<h4 class="text-xl w-2/3 leading-relaxed">A month-long festival to celebrate open source culture in Bangkok and Thailand. Let's code together!</h4>
+				<h4 class="w-2/3 text-xl leading-relaxed">
+					A month-long festival to celebrate open source culture in Bangkok and Thailand. Let's code
+					together!
+				</h4>
 			</div>
 			<div class="flex gap-6">
 				<button class="primary">Participate</button>
 				<button>About</button>
 			</div>
 		</div>
-		</section>
+	</section>
 	<section class="ui-container grid gap-8">
 		<h1 class="text-3xl font-medium">1. Write codes</h1>
-		<div class="grid md:grid-cols-3 gap-6 xl:gap-12">
+		<div class="grid gap-6 md:grid-cols-3 xl:gap-12">
 			{
-				["Elysia", "ThaiUI", "Contentsgarten", "Cluster.wiki", "PyThaiNLP", "toSkoy"].map(x => 
-					<div class="grid gap-4 group hover:cursor-pointer pt-4 border-t-2 border-neutral-300">
+				['Elysia', 'ThaiUI', 'Contentsgarten', 'Cluster.wiki', 'PyThaiNLP', 'toSkoy'].map((x) => (
+					<div class="group grid gap-4 border-t-2 border-neutral-300 pt-4 hover:cursor-pointer">
 						<div class="grid gap-2">
-							<h1 class="text-2xl underline group-hover:decoration-[3px] font-medium text-blue-800 group-hover:text-blue-900">{x}</h1>
+							<h1 class="text-2xl font-medium text-blue-800 underline group-hover:text-blue-900 group-hover:decoration-[3px]">
+								{x}
+							</h1>
 							<p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</div>
 					</div>
-				)
+				))
 			}
 		</div>
 	</section>
-	<section class="ui-container flex flex-col justify-center items-center border-2 border-neutral-300 px-4 py-6 bg-white">
-		<div class=" text-lg">
-		Explore More Projects on 
-		<a href="" class="underline">
-			Thai Open Source Web Ring!
-		</a>
-	</div>
+	<section
+		class="ui-container flex flex-col items-center justify-center border-2 border-neutral-300 bg-white px-4 py-6"
+	>
+		<div class="text-lg">
+			Explore More Projects on
+			<a href="" class="underline"> Thai Open Source Web Ring!</a>
+		</div>
 	</section>
 	<section class="ui-container grid gap-8">
 		<h1 class="text-3xl font-medium">2. Join events</h1>
-		<div class="grid md:grid-cols-3 gap-6 xl:gap-8">
+		<div class="grid gap-6 md:grid-cols-3 xl:gap-8">
 			{
-				eventList.map(x => 
-					<div class="grid gap-4 group hover:cursor-pointer">
-						<div class="aspect-video bg-neutral-300 w-full"></div>
+				eventList.map((x) => (
+					<div class="group grid gap-4 hover:cursor-pointer">
+						<div class="aspect-video w-full bg-neutral-300" />
 						<div class="grid gap-2">
-							<h1 class="text-2xl underline group-hover:decoration-[3px] font-medium text-blue-800 group-hover:text-blue-900">{x.name}</h1>
-							<h5 class="">{x.date} October '23 | {x.location}</h5>
+							<h1 class="text-2xl font-medium text-blue-800 underline group-hover:text-blue-900 group-hover:decoration-[3px]">
+								{x.name}
+							</h1>
+							<h5 class="">
+								{x.date} October '23 | {x.location}
+							</h5>
 						</div>
 					</div>
-				)
+				))
 			}
 		</div>
 	</section>
 	<section class="ui-container grid gap-6 text-lg">
 		<h1 class="text-3xl font-medium">3. Get our swags</h1>
-		<div class="text-lg flex flex-wrap gap-3 items-center">
+		<div class="flex flex-wrap items-center gap-3 text-lg">
 			<!-- <p>Tshirts, Keychains, Stickers, and more. <a href="" class="underline text-blue-800">Learn how.</a>
 			</p> -->
-			<div class="px-3 py-[0.15rem] bg-white rounded-full border-2 border-neutral-300">#Tshirts</div>
-			<div class="px-3 py-[0.15rem] bg-white rounded-full border-2 border-neutral-300">#Keychains</div>
-			<div class="px-3 py-[0.15rem] bg-white rounded-full border-2 border-neutral-300">#Stickers</div>
-			<div class="px-3 py-[0.15rem] bg-white rounded-full border-2 border-neutral-300">and more!</div>
+			<div class="rounded-full border-2 border-neutral-300 bg-white px-3 py-[0.15rem]">
+				#Tshirts
+			</div>
+			<div class="rounded-full border-2 border-neutral-300 bg-white px-3 py-[0.15rem]">
+				#Keychains
+			</div>
+			<div class="rounded-full border-2 border-neutral-300 bg-white px-3 py-[0.15rem]">
+				#Stickers
+			</div>
+			<div class="rounded-full border-2 border-neutral-300 bg-white px-3 py-[0.15rem]">
+				and more!
+			</div>
 		</div>
-		<div><a href="" class="underline text-blue-800">Learn how.</a></div>
+		<div><a href="" class="text-blue-800 underline">Learn how.</a></div>
 	</section>
-	<section class="ui-container grid grid-cols-1 md:grid-cols-4 gap-10 text-lg py-12 border-y-2 border-neutral-300">
-		<div class="md:col-span-3 flex flex-col gap-4">
+	<section
+		class="ui-container grid grid-cols-1 gap-10 border-y-2 border-neutral-300 py-12 text-lg md:grid-cols-4"
+	>
+		<div class="flex flex-col gap-4 md:col-span-3">
 			<h1 class="text-2xl font-medium">Presented by</h1>
 			<div class="grid grid-cols-3 gap-4">
-				<div class="w-full aspect-video bg-neutral-300" />
-				<div class="w-full aspect-video bg-neutral-300" />
-				<div class="w-full aspect-video bg-neutral-300" />
-				<div class="w-full aspect-video bg-neutral-300" />
-				<div class="w-full aspect-video bg-neutral-300" />
-				<div class="w-full aspect-video bg-neutral-300" />
-			</div>
+				<div class="aspect-video w-full bg-neutral-300"></div>
+				<div class="aspect-video w-full bg-neutral-300"></div>
+				<div class="aspect-video w-full bg-neutral-300"></div>
+				<div class="aspect-video w-full bg-neutral-300"></div>
+				<div class="aspect-video w-full bg-neutral-300"></div>
+				<div class="aspect-video w-full bg-neutral-300"></div>
 			</div>
 		</div>
 		<div class="flex flex-col gap-4">
 			<h1 class="text-2xl font-medium">Partner with us</h1>
 			<div class="">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac consequat ex. Nam vulputate dictum est, vestibulum lacinia nibh gravida id.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac consequat ex. Nam
+				vulputate dictum est, vestibulum lacinia nibh gravida id.
 			</div>
 			<div>
 				<button class="primary">Join now!</button>
-			</div>
 			</div>
 		</div>
 	</section>
 </BaseLayout>
 
 <style>
-	button {
-		@apply px-4 py-2 border-2 rounded-md border-neutral-900 bg-neutral-100 hover:bg-neutral-200 focus:text-neutral-900 focus:bg-amber-300 active:ring-0 outline-none text-lg;
-	}
-	.primary {
-		@apply bg-blue-800 hover:bg-blue-900 text-neutral-50;
-	}
 	.el {
-		@apply w-full aspect-[21/9] flex justify-center items-center bg-blue-50 border-2 border-neutral-900;
+		@apply flex aspect-[21/9] w-full items-center justify-center border-2 border-neutral-900 bg-blue-50;
 	}
 	.mesh-3 {
-    background: fixed;
-    background-color: rgb(252, 165, 165);
-    background-image: radial-gradient(at 79% 79%, rgb(236, 254, 255) 0, transparent 59%),
-      radial-gradient(at 22% 84%, rgb(254, 249, 195) 0, transparent 47%),
-      radial-gradient(at 55% 48%, rgb(136, 19, 55) 0, transparent 47%),
-      radial-gradient(at 81% 52%, rgb(7, 89, 133) 0, transparent 52%),
-      radial-gradient(at 19% 2%, rgb(147, 197, 253) 0, transparent 35%);
-    /* radial-gradient(at 17% 34%, rgb(5, 150, 105) 0, transparent 6%); */
-  }
+		background: fixed;
+		background-color: rgb(252, 165, 165);
+		background-image: radial-gradient(at 79% 79%, rgb(236, 254, 255) 0, transparent 59%),
+			radial-gradient(at 22% 84%, rgb(254, 249, 195) 0, transparent 47%),
+			radial-gradient(at 55% 48%, rgb(136, 19, 55) 0, transparent 47%),
+			radial-gradient(at 81% 52%, rgb(7, 89, 133) 0, transparent 52%),
+			radial-gradient(at 19% 2%, rgb(147, 197, 253) 0, transparent 35%);
+		/* radial-gradient(at 17% 34%, rgb(5, 150, 105) 0, transparent 6%); */
+	}
+
+	button {
+		@apply rounded-md border-2 border-neutral-900  bg-neutral-100 px-4 py-2 text-lg outline-none hover:bg-neutral-200 focus:bg-amber-300 focus:text-neutral-900 active:ring-0;
+	}
+
+	.primary {
+		@apply bg-blue-700
+   text-neutral-50 hover:bg-blue-800 focus:bg-amber-300 focus:text-neutral-900;
+	}
 </style>
