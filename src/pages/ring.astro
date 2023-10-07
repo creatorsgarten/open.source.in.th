@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import ring from '../content/ring.json'
+---
+
+<BaseLayout>
+	<section class="ui-container mt-6 flex flex-col items-center justify-center gap-12 md:mt-8">
+		<h1 class="text-center text-3xl font-medium">👾 Project List</h1>
+		<div class="main-grid">
+			{
+				ring.project.map((x) => {
+					return (
+						<a
+							class="border-bosf/30 hover:border-bosf/50 group flex flex-col gap-4 rounded-sm border bg-white p-6 shadow-sm transition-all hover:bg-gradient-to-br"
+							href="/"
+						>
+							<div class="grid gap-1">
+								<h3 class="text-2xl font-medium transition-all">{x.name}</h3>
+								<p class="text-base">{x.description}</p>
+							</div>
+						</a>
+					)
+				})
+			}
+		</div>
+		<a href="" class="black-btn">🤘 Add project</a>
+	</section>
+</BaseLayout>

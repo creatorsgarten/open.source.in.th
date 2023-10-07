@@ -10,9 +10,21 @@ body {
 }
 
 a {
-	@apply from-amber-200 to-amber-300 outline-none hover:bg-gradient-to-br hover:text-neutral-900 focus:bg-gradient-to-br focus:text-neutral-900 active:ring-0;
+	@apply outline-none hover:text-neutral-900 focus:bg-gradient-to-br focus:text-neutral-900 active:ring-0;
+}
+
+.highlight {
+	@apply from-amber-200 to-amber-300 px-1 hover:bg-gradient-to-br;
 }
 
 .ui-container {
 	@apply mx-auto w-full max-w-6xl px-4 md:px-8 lg:px-6;
+}
+
+.main-grid {
+	@apply grid gap-5 md:grid-cols-2 lg:grid-cols-3;
+}
+
+.black-btn {
+	@apply rounded-full bg-gradient-to-br from-neutral-800 to-neutral-900 px-6 py-3 text-xl text-neutral-50 shadow-sm transition-all hover:scale-[1.02] hover:text-neutral-50 hover:shadow-md;
 }

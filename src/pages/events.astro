@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import events from '../content/events.json'
+---
+
+<BaseLayout>
+	<section class="ui-container mt-6 grid gap-8 md:mt-8">
+		<h1 class="text-center text-3xl font-medium">🪐 Events</h1>
+		<div class="main-grid">
+			{
+				[...events.events].map((x) => {
+					return (
+						<a class="group flex flex-col gap-4 transition-all hover:scale-[1.005]" href="/">
+							<div class="aspect-video w-full bg-neutral-200" />
+							<div class="grid gap-1">
+								<h3 class=" text-xl font-medium underline-offset-2 group-hover:underline">
+									{x.name}
+								</h3>
+								<div>
+									{x.location} | {x.date} October '23
+								</div>
+							</div>
+						</a>
+					)
+				})
+			}
+		</div>
+	</section>
+</BaseLayout>

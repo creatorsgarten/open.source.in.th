@@ -1,29 +1,34 @@
 {
-	"ring": [
+	"project": [
 		{
 			"name": "Thai Open Source Ring",
-			"git": "21",
-			"description": ""
+			"repo": "https://www.github.com/creatorsgarten/open.source.in.th",
+			"description": "A webring of 🇹🇭 Open Source Projects and Developers"
 		},
 		{
 			"name": "ThaiUI",
-			"git": "21",
-			"description": "Royal Paragon Hall"
+			"repo": "https://www.github.com/oseda/thaiui",
+			"description": "Open-source UI library, design system, templates and plugins for Thai websites."
 		},
 		{
 			"name": "Elysia",
-			"git": "21",
-			"description": "Royal Paragon Hall"
+			"repo": "https://www.github.com/elysiajs/elysiajs",
+			"description": "TypeScript framework supercharged by Bun with End-to-End Type Safety."
 		},
 		{
 			"name": "Contentsgarten",
-			"git": "21",
-			"description": "Royal Paragon Hall"
+			"repo": "https://www.github.com/creatorsgarten/contentsgarten",
+			"description": "A modern, markdown-based cloud-native wiki engine"
 		},
 		{
-			"name": "Oknize",
-			"git": "21",
-			"description": "Royal Paragon Hall"
+			"name": "techcal.dev",
+			"repo": "https://github.com/creatorsgarten/techcal.dev",
+			"description": "Calendar of Tech Event in your town"
+		},
+		{
+			"name": "Data Science Blocks",
+			"repo": "https://github.com/DataSciBlock/DataSciBlock",
+			"description": " Use blocks for data science. Graph, dataset, mutating data."
 		}
 	]
 }
