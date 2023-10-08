@@ -40,12 +40,27 @@ import sponsors from '../content/sponsors.json'
 				{
 					[...events.events].map((x) => {
 						return (
-							<a class="group flex flex-col gap-4 transition-all hover:scale-[1.005]" href="/">
-								<img
-									class="aspect-video w-full bg-neutral-200"
-									src={`/events/${x.img}`}
-									alt={x.name}
-								/>
+							<a
+								class={
+									'group flex flex-col gap-4 transition-all hover:scale-[1.005] ' +
+									(x.link ? '' : 'pointer-events-none')
+								}
+								href={x.link || 'javascript:'}
+							>
+								<div class="relative overflow-hidden">
+									<img
+										class={'aspect-video w-full bg-neutral-200 ' + (x.link ? '' : 'opacity-50')}
+										src={`/events/${x.img}`}
+										alt={x.name}
+									/>
+									{x.link ? null : (
+										<div class="absolute inset-0 flex flex-col justify-center">
+											<div class="-rotate-12 scale-125 bg-black/50 p-2 text-center text-white/80 backdrop-blur-md">
+												(to be announced)
+											</div>
+										</div>
+									)}
+								</div>
 								<div class="grid gap-1">
 									<h3 class=" text-xl font-medium underline-offset-2 group-hover:underline">
 										{x.name}
