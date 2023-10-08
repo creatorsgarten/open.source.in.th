@@ -35,7 +35,9 @@
 			"img": "thinc.png"
 		},
 		{
-			"name": "ITx"
+			"name": "ITx",
+			"img": "ITxKMTIL.png",
+			"url": "https://www.facebook.com/ITxKMITL/"
 		},
 		{
 			"name": "Spark Tech Thailand",
@@ -43,7 +45,8 @@
 			"img": "sparktech.png"
 		},
 		{
-			"name": "Hack BKK"
+			"name": "Hack BKK",
+			"img": "hackbkk.jpg"
 		}
 	]
 }
