@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 import ring from '../content/ring.json'
 import events from '../content/events.json'
+import sponsors from '../content/sponsors.json'
 ---
 
 <BaseLayout>
@@ -73,6 +74,22 @@ import events from '../content/events.json'
 				}
 			</div>
 		</section>
+		<section class="ui-container grid gap-6 text-lg">
+			<h1 class="text-center text-3xl font-medium">3. Get our swags 👾</h1>
+			<div class="flex flex-wrap items-center justify-center gap-3 text-lg">
+				<!-- <p>Tshirts, Keychains, Stickers, and more. <a href="" class="underline text-blue-800">Learn how.</a>
+			</p> -->
+				{
+					['#Tshirts', '#Keychains', '#Stickers', 'and more!'].map((x) => {
+						return (
+							<div class="rounded-full border-2 border-neutral-300 bg-white px-3 py-[0.15rem] transition-all hover:scale-[1.01] hover:cursor-pointer hover:border-bosf/60">
+								{x}
+							</div>
+						)
+					})
+				}
+			</div>
+		</section>
 		<div class="flex justify-center">
 			<a href="https://creatorsgarten.org/wiki/Bosf23" class="black-btn">Join Now!</a>
 		</div>
@@ -82,44 +99,69 @@ import events from '../content/events.json'
 			<div class="flex flex-col gap-4 lg:col-span-3">
 				<h1 class="text-2xl font-medium">Presented by</h1>
 				<div class="grid grid-cols-3 gap-4">
-					<div class="aspect-video w-full bg-neutral-300"></div>
-					<div class="aspect-video w-full bg-neutral-300"></div>
-					<div class="aspect-video w-full bg-neutral-300"></div>
-					<div class="aspect-video w-full bg-neutral-300"></div>
-					<div class="aspect-video w-full bg-neutral-300"></div>
-					<div class="aspect-video w-full bg-neutral-300"></div>
+					{
+						[...sponsors.sponsors].map((sponsor) => (
+							<a
+								href={sponsor.link}
+								class="aspect-video w-full items-center bg-neutral-300 text-center"
+							>
+								<div class="aspect-video w-full bg-neutral-300 text-center">
+									<img class="h-full" src={`/sponsors/${sponsor.img}`} alt={sponsor.name} />
+									{sponsor.name}
+								</div>
+							</a>
+						))
+					}
 				</div>
 			</div>
-			<div class="flex flex-col gap-4">
-				<h1 class="text-2xl font-medium">Partner with us</h1>
-
-				<div>We are open for sponsorships!</div>
+			<div class="flex justify-center">
+				<a href="https://creatorsgarten.org/wiki/Bosf23" class="black-btn">Join Now!</a>
 			</div>
+			<section
+				class="ui-container grid grid-cols-1 gap-10 border-y-2 border-neutral-300 py-12 text-lg lg:grid-cols-4"
+			>
+				<div class="flex flex-col gap-4 lg:col-span-3">
+					<h1 class="text-2xl font-medium">Presented by</h1>
+					<div class="grid grid-cols-3 gap-4">
+						<div class="aspect-video w-full bg-neutral-300"></div>
+						<div class="aspect-video w-full bg-neutral-300"></div>
+						<div class="aspect-video w-full bg-neutral-300"></div>
+						<div class="aspect-video w-full bg-neutral-300"></div>
+						<div class="aspect-video w-full bg-neutral-300"></div>
+						<div class="aspect-video w-full bg-neutral-300"></div>
+					</div>
+				</div>
+				<div class="flex flex-col gap-4">
+					<h1 class="text-2xl font-medium">Partner with us</h1>
+
+					<div>We are open for sponsorships!</div>
+				</div>
+			</section>
 		</section>
-	</section>
 
-	<style>
-		.el {
-			@apply flex aspect-[21/9] w-full items-center justify-center border-2 border-neutral-900 bg-blue-50;
-		}
-		.mesh-3 {
-			background: fixed;
-			background-color: rgb(252, 165, 165);
-			background-image: radial-gradient(at 79% 79%, rgb(236, 254, 255) 0, transparent 59%),
-				radial-gradient(at 22% 84%, rgb(254, 249, 195) 0, transparent 47%),
-				radial-gradient(at 55% 48%, rgb(136, 19, 55) 0, transparent 47%),
-				radial-gradient(at 81% 52%, rgb(7, 89, 133) 0, transparent 52%),
-				radial-gradient(at 19% 2%, rgb(147, 197, 253) 0, transparent 35%);
-			/* radial-gradient(at 17% 34%, rgb(5, 150, 105) 0, transparent 6%); */
-		}
+		<style>
+			.el {
+				@apply flex aspect-[21/9] w-full items-center justify-center border-2 border-neutral-900 bg-blue-50;
+			}
+			.mesh-3 {
+				background: fixed;
+				background-color: rgb(252, 165, 165);
+				background-image: radial-gradient(at 79% 79%, rgb(236, 254, 255) 0, transparent 59%),
+					radial-gradient(at 22% 84%, rgb(254, 249, 195) 0, transparent 47%),
+					radial-gradient(at 55% 48%, rgb(136, 19, 55) 0, transparent 47%),
+					radial-gradient(at 81% 52%, rgb(7, 89, 133) 0, transparent 52%),
+					radial-gradient(at 19% 2%, rgb(147, 197, 253) 0, transparent 35%);
+				/* radial-gradient(at 17% 34%, rgb(5, 150, 105) 0, transparent 6%); */
+			}
 
-		button {
-			@apply rounded-md border-2 border-neutral-900  bg-neutral-100 px-4 py-2 text-lg outline-none hover:bg-neutral-200 focus:bg-amber-300 focus:text-neutral-900 active:ring-0;
-		}
+			button {
+				@apply rounded-md border-2 border-neutral-900  bg-neutral-100 px-4 py-2 text-lg outline-none hover:bg-neutral-200 focus:bg-amber-300 focus:text-neutral-900 active:ring-0;
+			}
 
-		.primary {
-			@apply bg-blue-700
+			.primary {
+				@apply bg-blue-700
    text-neutral-50 hover:bg-blue-800 focus:bg-amber-300 focus:text-neutral-900;
-		}
-	</style>
+			}
+		</style>
+	</section>
 </BaseLayout>
