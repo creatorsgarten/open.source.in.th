@@ -24,7 +24,8 @@
 		},
 		{
 			"name": "Creatorsgarten",
-			"url": "https://creatorsgarten.org/"
+			"url": "https://creatorsgarten.org/",
+			"img": "creatorsgarten.svg"
 		},
 		{
 			"name": "Thinc."
