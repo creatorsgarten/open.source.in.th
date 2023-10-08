@@ -11,7 +11,11 @@ import events from '../content/events.json'
 				[...events.events].map((x) => {
 					return (
 						<a class="group flex flex-col gap-4 transition-all hover:scale-[1.005]" href="/">
-							<div class="aspect-video w-full bg-neutral-200" />
+							<img
+								class="aspect-video w-full bg-neutral-200"
+								src={`/events/${x.img}`}
+								alt={x.name}
+							/>
 							<div class="grid gap-1">
 								<h3 class=" text-xl font-medium underline-offset-2 group-hover:underline">
 									{x.name}

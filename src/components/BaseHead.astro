@@ -1,13 +1,17 @@
 ---
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
-import '../styles/global.css';
+import '../styles/global.css'
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
-const { title, description, image = '/blog-placeholder-1.jpg'} = {
+const {
+	title,
+	description,
+	image = '/blog-placeholder-1.jpg'
+} = {
 	title: "Festival '23",
-	description: "Bangkok Open Source: Let's code together!",
+	description: "Bangkok Open Source: Let's code together!"
 }
 ---
 
@@ -18,8 +22,6 @@ const { title, description, image = '/blog-placeholder-1.jpg'} = {
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
-<link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin />
-<link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />

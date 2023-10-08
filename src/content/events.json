@@ -1,9 +1,22 @@
 {
 	"events": [
 		{
+			"name": "Garden Zero Hack Club",
+			"date": "8",
+			"location": "Cleverse",
+			"img": "g0.webp"
+		},
+		{
+			"name": "ITx KMITL: XTOBER 23",
+			"date": "15",
+			"location": "Online",
+			"img": "xtober.webp"
+		},
+		{
 			"name": "Hacktoberfest Thailand",
 			"date": "21",
-			"location": "Royal Paragon Hall"
+			"location": "WiseSight",
+			"img": "h10.webp"
 		}
 	]
 }

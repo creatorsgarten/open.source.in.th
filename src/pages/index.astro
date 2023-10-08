@@ -18,10 +18,7 @@ import events from '../content/events.json'
 			{
 				ring.project.map((x) => {
 					return (
-						<a
-							class="border-bosf/30 hover:border-bosf/50 group flex flex-col gap-4 rounded-sm border bg-white p-6 shadow-sm transition-all hover:bg-gradient-to-br"
-							href="/"
-						>
+						<a class="project-card group" href="/">
 							<div class="grid gap-1">
 								<h3 class="text-2xl font-medium transition-all">{x.name}</h3>
 								<p class="text-base">{x.description}</p>
@@ -42,7 +39,11 @@ import events from '../content/events.json'
 				[...events.events].map((x) => {
 					return (
 						<a class="group flex flex-col gap-4 transition-all hover:scale-[1.005]" href="/">
-							<div class="aspect-video w-full bg-neutral-200" />
+							<img
+								class="aspect-video w-full bg-neutral-200"
+								src={`/events/${x.img}`}
+								alt={x.name}
+							/>
 							<div class="grid gap-1">
 								<h3 class=" text-xl font-medium underline-offset-2 group-hover:underline">
 									{x.name}
@@ -58,26 +59,23 @@ import events from '../content/events.json'
 		</div>
 	</section>
 	<section class="ui-container grid gap-6 text-lg">
-		<h1 class="text-center text-3xl font-medium">3. Get our swags! 👾</h1>
+		<h1 class="text-center text-3xl font-medium">3. Get our swags 👾</h1>
 		<div class="flex flex-wrap items-center justify-center gap-3 text-lg">
 			<!-- <p>Tshirts, Keychains, Stickers, and more. <a href="" class="underline text-blue-800">Learn how.</a>
 			</p> -->
-			<div class="rounded-full border-2 border-neutral-300 bg-white px-3 py-[0.15rem]">
-				#Tshirts
-			</div>
-			<div class="rounded-full border-2 border-neutral-300 bg-white px-3 py-[0.15rem]">
-				#Keychains
-			</div>
-			<div class="rounded-full border-2 border-neutral-300 bg-white px-3 py-[0.15rem]">
-				#Stickers
-			</div>
-			<div class="rounded-full border-2 border-neutral-300 bg-white px-3 py-[0.15rem]">
-				and more!
-			</div>
+			{
+				['#Tshirts', '#Keychains', '#Stickers', 'and more!'].map((x) => {
+					return (
+						<div class="rounded-full border-2 border-neutral-300 bg-white px-3 py-[0.15rem] transition-all hover:scale-[1.01] hover:cursor-pointer hover:border-bosf/60">
+							{x}
+						</div>
+					)
+				})
+			}
 		</div>
 	</section>
 	<div class="flex justify-center">
-		<a href="" class="black-btn">Join Now</a>
+		<a href="https://creatorsgarten.org/wiki/Bosf23" class="black-btn">Join Now!</a>
 	</div>
 	<section
 		class="ui-container grid grid-cols-1 gap-10 border-y-2 border-neutral-300 py-12 text-lg lg:grid-cols-4"
