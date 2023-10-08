@@ -6,8 +6,8 @@ import sponsors from '../content/sponsors.json'
 ---
 
 <BaseLayout>
-	<section class="ui-container flex flex-col items-center justify-center gap-12 pt-10 lg:pt-24">
-		<img src="/full.svg" alt="" class="w-full p-2 lg:w-3/4" />
+	<section class="ui-container flex flex-col items-center justify-center gap-16 pt-10 lg:pt-24">
+		<img src="/full.svg" alt="" class="w-11/12 p-2 lg:w-3/4" />
 
 		<h4 class="w-11/12 text-center text-base leading-relaxed text-neutral-700 md:w-2/3 lg:text-xl">
 			A month-long festival to celebrate open source culture in Bangkok and Thailand. Let's code
@@ -100,10 +100,13 @@ import sponsors from '../content/sponsors.json'
 				<div class="grid grid-cols-3 gap-10">
 					{
 						[...sponsors.sponsors].map((sponsor) => (
-							<a href={sponsor.url} class="aspect-video w-full items-center  text-center">
-								<div class="flex aspect-video w-full flex-col items-center  justify-center gap-2 text-center">
+							<a
+								href={sponsor.url}
+								class="aspect-video w-full items-center text-center transition-all hover:scale-[1.02]"
+							>
+								<div class="flex aspect-video w-full flex-col items-center  justify-center gap-2 px-2 text-center md:px-0">
 									<img
-										class={`h-[80%] object-contain p-1 md:p-2 lg:p-4`}
+										class={`h-full object-contain md:h-[80%] md:p-2 lg:p-4`}
 										src={`/sponsors/${sponsor.img}`}
 										alt={sponsor.name}
 									/>
@@ -115,7 +118,9 @@ import sponsors from '../content/sponsors.json'
 			</div>
 			<div class="flex flex-col items-start gap-4">
 				<h1 class="text-2xl font-medium">Partner with us</h1>
-				<div>We are open for project/event partners and sponsorships! 🙌</div>
+				<div class="mb-1 leading-relaxed">
+					We are open for project/event partners and sponsorships! 🙌
+				</div>
 				<a href="https://creatorsgarten.org/wiki/Bosf23" class="black-btn">Join us</a>
 			</div>
 		</section>
