@@ -101,11 +101,15 @@ import sponsors from '../content/sponsors.json'
 					{
 						[...sponsors.sponsors].map((sponsor) => (
 							<a
-								href={sponsor.link}
+								href={sponsor.url}
 								class="aspect-video w-full items-center bg-neutral-300 text-center"
 							>
-								<div class="aspect-video w-full bg-neutral-300 text-center">
-									<img class="h-full" src={`/sponsors/${sponsor.img}`} alt={sponsor.name} />
+								<div class="flex aspect-video w-full flex-col gap-2 bg-neutral-300 text-center">
+									<img
+										class="h-full object-contain"
+										src={`/sponsors/${sponsor.img}`}
+										alt={sponsor.name}
+									/>
 									{sponsor.name}
 								</div>
 							</a>
