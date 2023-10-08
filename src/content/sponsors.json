@@ -1,0 +1,40 @@
+{
+	"sponsors": [
+		{
+			"name": "WiseSight",
+			"url": "http://www.wisesight.com/",
+			"img": "wisesight.png",
+			"description": "it's wishsdfjsd",
+			"isSponsor": true
+		},
+		{
+			"name": "Cleverse",
+			"url": "http://www.cleverse.com/",
+			"img": "cleverse.png",
+			"description": "it's wishsdfjsd",
+			"isSponsor": true
+		},
+		{
+			"name": "OSEDA"
+		},
+
+		{
+			"name": "Thai Programmer Association"
+		},
+		{
+			"name": "Creatorsgarten"
+		},
+		{
+			"name": "Thinc."
+		},
+		{
+			"name": "ITx"
+		},
+		{
+			"name": "Spark Tech Thailand"
+		},
+		{
+			"name": "Hack BKK"
+		}
+	]
+}

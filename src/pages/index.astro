@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 import ring from '../content/ring.json'
 import events from '../content/events.json'
+import sponsors from '../content/sponsors.json'
 ---
 
 <BaseLayout>
@@ -83,12 +84,19 @@ import events from '../content/events.json'
 		<div class="flex flex-col gap-4 lg:col-span-3">
 			<h1 class="text-2xl font-medium">Presented by</h1>
 			<div class="grid grid-cols-3 gap-4">
-				<div class="aspect-video w-full bg-neutral-300"></div>
-				<div class="aspect-video w-full bg-neutral-300"></div>
-				<div class="aspect-video w-full bg-neutral-300"></div>
-				<div class="aspect-video w-full bg-neutral-300"></div>
-				<div class="aspect-video w-full bg-neutral-300"></div>
-				<div class="aspect-video w-full bg-neutral-300"></div>
+				{
+					[...sponsors.sponsors].map((sponsor) => (
+						<a
+							href={sponsor.link}
+							class="aspect-video w-full items-center bg-neutral-300 text-center"
+						>
+							<div class="aspect-video w-full bg-neutral-300 text-center">
+								<img class="h-full" src={`/sponsors/${sponsor.img}`} alt={sponsor.name} />
+								{sponsor.name}
+							</div>
+						</a>
+					))
+				}
 			</div>
 		</div>
 		<div class="flex flex-col gap-4">
