@@ -10,7 +10,7 @@
 		{
 			"name": "Cleverse",
 			"url": "https://www.cleverse.com/",
-			"img": "cleverse.png",
+			"img": "cleverse.svg",
 			"description": "it's wishsdfjsd",
 			"isSponsor": true
 		},
@@ -21,6 +21,7 @@
 		},
 		{
 			"name": "Thai Programmer Association",
+			"url": "https://www.thaiprogrammer.org/",
 			"img": "logo-thai-programmer.svg"
 		},
 		{
@@ -29,13 +30,17 @@
 			"img": "creatorsgarten.svg"
 		},
 		{
-			"name": "Thinc."
+			"name": "Thinc.",
+			"url": "https://thinc.in.th/",
+			"img": "thinc.png"
 		},
 		{
 			"name": "ITx"
 		},
 		{
-			"name": "Spark Tech Thailand"
+			"name": "Spark Tech Thailand",
+			"url": "https://www.facebook.com/SparkTechTH/",
+			"img": "sparktech.png"
 		},
 		{
 			"name": "Hack BKK"
