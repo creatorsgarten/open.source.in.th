@@ -2,20 +2,21 @@
 	"sponsors": [
 		{
 			"name": "WiseSight",
-			"url": "http://www.wisesight.com/",
+			"url": "https://www.wisesight.com/",
 			"img": "wisesight.png",
 			"description": "it's wishsdfjsd",
 			"isSponsor": true
 		},
 		{
 			"name": "Cleverse",
-			"url": "http://www.cleverse.com/",
+			"url": "https://www.cleverse.com/",
 			"img": "cleverse.png",
 			"description": "it's wishsdfjsd",
 			"isSponsor": true
 		},
 		{
-			"name": "OSEDA"
+			"name": "OSEDA",
+			"url": "https://www.oseda.or.th/"
 		},
 
 		{
