@@ -18,6 +18,12 @@
 			"date": "21",
 			"location": "WiseSight",
 			"img": "h10.webp"
+		},
+		{
+			"name": "Thai MongoDB User Group: Mongoberfest & Pyfest",
+			"date": "7-21",
+			"location": "TBA",
+			"img": "mongo.png"
 		}
 	]
 }

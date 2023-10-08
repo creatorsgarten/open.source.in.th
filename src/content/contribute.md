@@ -29,3 +29,9 @@
 5. **Review and Confirm**:
 
    Review your pull request and confirm that it looks correct. Once approved, your project will be added to the webring.
+
+---
+
+## Adding projects via repo tag
+
+**Coming Soon.**
