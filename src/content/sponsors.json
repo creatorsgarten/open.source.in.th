@@ -16,14 +16,15 @@
 		},
 		{
 			"name": "OSEDA",
-			"url": "https://www.oseda.or.th/"
+			"url": "https://www.oseda.or.th/",
+			"img": "oseda.png"
 		},
-
 		{
 			"name": "Thai Programmer Association"
 		},
 		{
-			"name": "Creatorsgarten"
+			"name": "Creatorsgarten",
+			"url": "https://creatorsgarten.org/"
 		},
 		{
 			"name": "Thinc."
