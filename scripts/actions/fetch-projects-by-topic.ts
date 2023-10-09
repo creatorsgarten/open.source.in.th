@@ -17,6 +17,13 @@ async function fetchProjects(): Promise<Repository[]> {
 	return data.items
 }
 
+function saveProjectsToJSON(projects: Project[]) {
+	const data = {
+		projects: projects
+	}
+	fs.writeFileSync(filename, JSON.stringify(data, null, 2))
+}
+
 async function main() {
 	const repositories = await fetchProjects()
 	const projects = repositories.map<Project>((repo) => ({
@@ -24,7 +31,7 @@ async function main() {
 		repo: repo.html_url,
 		description: repo.description
 	}))
-	fs.writeFileSync(filename, JSON.stringify(projects, null, 2))
+	saveProjectsToJSON(projects)
 }
 
 main()
