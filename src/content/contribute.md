@@ -6,7 +6,7 @@
 
 2. **Find `ring.json`**:
 
-   [Locate the `ring.json` file](/src/contents/ring.json) in the project's source code repository.
+   Locate the [`ring.json`](https://github.com/creatorsgarten/open.source.in.th/blob/main/src/content/ring.json) file in the project's source code repository.
 
 3. **Edit `ring.json`**:
 
@@ -24,7 +24,7 @@
 
 4. **Create a Pull Request**:
 
-   [Create a pull request](https://github.com/creatorsgarten/open.source.in.th/compare/main...add-your-project-name) from your branch to the main branch. Provide details about the changes you made.
+   [Create a pull request](https://github.com/creatorsgarten/open.source.in.th/compare) from your branch to the main branch. Provide details about the changes you made.
 
 5. **Review and Confirm**:
 
