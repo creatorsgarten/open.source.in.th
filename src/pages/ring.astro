@@ -10,7 +10,7 @@ import ring from '../content/ring.json'
 			{
 				ring.project.map((x) => {
 					return (
-						<a class="project-card group" href="/">
+						<a class="project-card group" href={x.repo}>
 							<div class="grid gap-1">
 								<h3 class="text-2xl font-medium transition-all">{x.name}</h3>
 								<p class="text-base">{x.description}</p>
