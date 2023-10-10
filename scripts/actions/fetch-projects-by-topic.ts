@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
-const topic = 'hacktoberfest'
+const topic = 'bosf23'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const filename = path.resolve(__dirname, '../../src/content/ring.generated.json')
