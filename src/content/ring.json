@@ -29,6 +29,11 @@
 			"name": "Data Science Blocks",
 			"repo": "https://github.com/DataSciBlock/DataSciBlock",
 			"description": " Use blocks for data science. Graph, dataset, mutating data."
+		},
+		{
+			"name": "Joy Treasury",
+			"repo": "https://github.com/siriwatknp/joy-treasury",
+			"description": "Design inspiration to reality with Joy UI."
 		}
 	]
 }
