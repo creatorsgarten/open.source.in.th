@@ -29,6 +29,11 @@
 			"name": "Data Science Blocks",
 			"repo": "https://github.com/DataSciBlock/DataSciBlock",
 			"description": " Use blocks for data science. Graph, dataset, mutating data."
+		},
+		{
+			"name": "CodeJourney: Internship Stories",
+			"repo": "https://github.com/NongSnail/codejourney_internship_stories",
+			"description": "Collecting Internship Articles in the Programmer"
 		}
 	]
 }
