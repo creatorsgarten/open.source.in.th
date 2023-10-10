@@ -29,6 +29,11 @@
 			"name": "Data Science Blocks",
 			"repo": "https://github.com/DataSciBlock/DataSciBlock",
 			"description": " Use blocks for data science. Graph, dataset, mutating data."
+		},
+		{
+			"name": "Parliament Watch",
+			"repo": "https://github.com/wevisdemo/parliament-watch",
+			"description": "record and visualise the Thai parliament information including politicians, assemblies, bills, voting processes, and promises."
 		}
 	]
 }
