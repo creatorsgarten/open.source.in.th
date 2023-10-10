@@ -1,7 +1,11 @@
-import * as fs from 'fs'
+import fs from 'fs'
+import path from 'path'
+import { fileURLToPath } from 'url'
 
-const topic = 'bosf23'
-const filename = '../../src/content/ring.generated.json'
+const topic = 'hacktoberfest'
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+const filename = path.resolve(__dirname, '../../src/content/ring.generated.json')
 
 async function fetchProjects(): Promise<Repository[]> {
 	const url = new URL('https://api.github.com/search/repositories')
