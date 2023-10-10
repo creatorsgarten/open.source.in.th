@@ -1,34 +1,25 @@
 {
 	"sponsors": [
 		{
-			"name": "WiseSight",
-			"url": "https://www.wisesight.com/",
-			"img": "wisesight.png",
-			"description": "it's wishsdfjsd",
-			"isSponsor": true
-		},
-		{
-			"name": "Cleverse",
-			"url": "https://www.cleverse.com/",
-			"img": "cleverse.svg",
-			"description": "it's wishsdfjsd",
-			"isSponsor": true
-		},
-		{
 			"name": "OSEDA",
 			"url": "https://www.oseda.or.th/",
 			"img": "oseda.png"
 		},
 		{
-			"name": "Thai Programmer Association",
-			"url": "https://www.thaiprogrammer.org/",
-			"img": "logo-thai-programmer.svg"
+			"name": "Spark Tech Thailand",
+			"url": "https://www.facebook.com/SparkTechTH/",
+			"img": "sparktech.png"
 		},
 		{
 			"name": "Creatorsgarten",
 			"url": "https://creatorsgarten.org/",
 			"img": "creatorsgarten.svg",
 			"custom": "w-[60%]"
+		},
+		{
+			"name": "Thai Programmer Association",
+			"url": "https://www.thaiprogrammer.org/",
+			"img": "logo-thai-programmer.svg"
 		},
 		{
 			"name": "Intania Tech Month",
@@ -41,13 +32,22 @@
 			"url": "https://www.facebook.com/ITxKMITL/"
 		},
 		{
-			"name": "Spark Tech Thailand",
-			"url": "https://www.facebook.com/SparkTechTH/",
-			"img": "sparktech.png"
-		},
-		{
 			"name": "Hack BKK",
 			"img": "hackbkk.jpg"
+		},
+		{
+			"name": "WiseSight",
+			"url": "https://www.wisesight.com/",
+			"img": "wisesight.png",
+			"description": "it's wishsdfjsd",
+			"isSponsor": true
+		},
+		{
+			"name": "Cleverse",
+			"url": "https://www.cleverse.com/",
+			"img": "cleverse.svg",
+			"description": "it's wishsdfjsd",
+			"isSponsor": true
 		}
 	]
 }

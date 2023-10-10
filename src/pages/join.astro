@@ -1,13 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import Content from '../content/join.md'
 ---
 
 <BaseLayout>
-	<section class="ui-container flex flex-col items-center justify-center gap-12 pt-10 lg:pt-24">
-		<img src="/full.svg" alt="" class="w-full p-2 lg:w-3/4" />
-		<h4 class="w-11/12 text-center text-base leading-relaxed text-neutral-700 md:w-2/3 lg:text-xl">
-			A month-long festival to celebrate open source culture in Bangkok and Thailand. Let's code
-			together!
-		</h4>
+	<section class="ui-container 2 flex flex-col items-center justify-center gap-16 md:mt-8">
+		<h1 class="text-center text-3xl font-medium">🏕️ Join BOSF'23</h1>
+		<div class="prose">
+			<Content />
+		</div>
 	</section>
 </BaseLayout>
