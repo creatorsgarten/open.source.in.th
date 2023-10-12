@@ -34,16 +34,21 @@
 			"name": "CodeJourney: Internship Stories",
 			"repo": "https://github.com/NongSnail/codejourney_internship_stories",
 			"description": "Collecting Internship Articles in the Programmer"
-    },
-    {
+    		},
+    		{
 			"name": "Parliament Watch",
 			"repo": "https://github.com/wevisdemo/parliament-watch",
 			"description": "record and visualise the Thai parliament information including politicians, assemblies, bills, voting processes, and promises."
-    },
-    {
+    		},
+    		{
 			"name": "Joy Treasury",
 			"repo": "https://github.com/siriwatknp/joy-treasury",
 			"description": "Design inspiration to reality with Joy UI."
+		},
+		{
+			"name": "URGROWTH",
+			"repo": "https://github.com/urgrowth/urgrowth",
+			"description": "We are a medium of creative youths with a passion for personal growth and development."
 		}
 	]
 }
