@@ -34,13 +34,13 @@
 			"name": "CodeJourney: Internship Stories",
 			"repo": "https://github.com/NongSnail/codejourney_internship_stories",
 			"description": "Collecting Internship Articles in the Programmer"
-    },
-    {
+		},
+		{
 			"name": "Parliament Watch",
 			"repo": "https://github.com/wevisdemo/parliament-watch",
 			"description": "Record and visualise the Thai parliament information including politicians, assemblies, bills, voting processes, and promises. (Free stickers for Hacktoberfest!)"
-    },
-    {
+		,
+		{
 			"name": "Joy Treasury",
 			"repo": "https://github.com/siriwatknp/joy-treasury",
 			"description": "Design inspiration to reality with Joy UI."
@@ -49,18 +49,18 @@
 			"name": "GPTForAnything",
 			"repo": "https://github.com/pavaris-pm/GPTForAnything",
 			"description": "a knowledge source repository dedicated to collecting various resources related to the application of GPT (Generative Pre-trained Transformer) in a wide range of domains"
-    },
-    {
+		},
+		{
 			"name": "Resumette",
 			"repo": "https://github.com/narze/resume",
 			"description": "Printer-friendly standard résumé. Any sections can be hidden to fit into a single page of paper."
 		},
-    {
+		{
 			"name": "URGROWTH",
 			"repo": "https://github.com/urgrowth/urgrowth",
 			"description": "We are a medium of creative youths with a passion for personal growth and development."
-    },
-    {
+		},
+		{
 			"name": "Chromatone",
 			"repo": "https://github.com/chromatone/chromatone.center",
 			"description": "Interactive design laboratory for communicating music with colors and shapes"
