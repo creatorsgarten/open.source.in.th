@@ -12,7 +12,7 @@
     },
     {
       "name": "Elysia",
-      "repo": "https://www.github.com/elysia/elysia",
+      "repo": "https://www.github.com/elysiajs/elysia",
       "description": "TypeScript framework supercharged by Bun with End-to-End Type Safety."
     },
     {
