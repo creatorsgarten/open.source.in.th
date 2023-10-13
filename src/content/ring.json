@@ -34,7 +34,7 @@
 			"name": "CodeJourney: Internship Stories",
 			"repo": "https://github.com/NongSnail/codejourney_internship_stories",
 			"description": "Collecting Internship Articles in the Programmer"
-    }
+    },
     {
 			"name": "Parliament Watch",
 			"repo": "https://github.com/wevisdemo/parliament-watch",
@@ -50,6 +50,11 @@
 			"repo": "https://github.com/pavaris-pm/GPTForAnything",
 			"description": "a knowledge source repository dedicated to collecting various resources related to the application of GPT (Generative Pre-trained Transformer) in a wide range of domains"
     },
+    {
+			"name": "Resumette",
+			"repo": "https://github.com/narze/resume",
+			"description": "Printer-friendly standard résumé. Any sections can be hidden to fit into a single page of paper."
+		},
     {
 			"name": "URGROWTH",
 			"repo": "https://github.com/urgrowth/urgrowth",
