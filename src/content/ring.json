@@ -94,6 +94,11 @@
       "name": "Base EKS on AWS",
       "repo": "https://github.com/Cloud-NC-Engineering-Thailand/base-eks-cluster-aws",
       "description": "A collection of Terraform modules to reduce complexity for getting started on AWS EKS"
+    },
+    {
+	    "name": "Thai Citizen ID Validator",
+	    "repo": "https://github.com/jukbot/thai-citizen-id-validator",
+	    "description": "A Thai Citizen ID validator with 0 dependencies."
     }
   ]
 }
