@@ -71,6 +71,11 @@
       "description": "Type-safe Azure Function Library, writing the Azure serverless function with confidence."
     },
     {
+      "name": "Thai Baht Text js",
+      "repo": "https://github.com/antronic/thai-baht-text-js",
+      "description": "JavaScript library for convert numerical or number values into Thai Baht text"
+    },
+    {
       "name": "Killercoda Docker Lab",
       "repo": "https://github.com/Cloud-NC-Engineering-Thailand/cloudnc-docker-lab",
       "description": "The source code for Killercoda Docker Lab available here: https://killercoda.com/cloudnc"
