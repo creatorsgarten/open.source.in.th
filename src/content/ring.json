@@ -69,6 +69,26 @@
       "name": "Nammatham",
       "repo": "https://github.com/thaitype/nammatham",
       "description": "Type-safe Azure Function Library, writing the Azure serverless function with confidence."
+    },
+    {
+      "name": "Killercoda Docker Lab",
+      "repo": "https://github.com/Cloud-NC-Engineering-Thailand/cloudnc-docker-lab",
+      "description": "The source code for Killercoda Docker Lab available here: https://killercoda.com/cloudnc"
+    },
+    {
+      "name": "TiDB Multi Kubernetes Cluster",
+      "repo": "https://github.com/Cloud-NC-Engineering-Thailand/tidb-multi-kube-cluster",
+      "description": "A setup guideline to demonstrate how we use multi Kubernetes clusters for database scaling"
+    },
+    {
+      "name": "Kubernetes Traffic Failover",
+      "repo": "https://github.com/Cloud-NC-Engineering-Thailand/kube-split-traffic-failover",
+      "description": "A setup guideline to demonstrate how we use another cluster for failover"
+    },
+    {
+      "name": "Base EKS on AWS",
+      "repo": "https://github.com/Cloud-NC-Engineering-Thailand/base-eks-cluster-aws",
+      "description": "A collection of Terraform modules to reduce complexity for getting started on AWS EKS"
     }
   ]
 }
