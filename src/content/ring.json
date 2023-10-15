@@ -104,6 +104,11 @@
     	"name": "Zero Share",
     	"repo": "https://github.com/ntsd/zero-share",
     	"description": "A client-side secure P2P file sharing using WebRTC."
+    },
+    {
+    	"name": "MongoDB Thailand User Group Website",
+    	"repo": "https://github.com/mongodbthailand/mongodbthailand.github.io",
+    	"description": "MongoDB documents for Thailand community"
     }
   ]
 }
