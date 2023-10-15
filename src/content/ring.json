@@ -96,6 +96,11 @@
       "description": "A collection of Terraform modules to reduce complexity for getting started on AWS EKS"
     },
     {
+	    "name": "Thai Citizen ID Validator",
+	    "repo": "https://github.com/jukbot/thai-citizen-id-validator",
+	    "description": "A Thai Citizen ID validator with 0 dependencies."
+    },
+    {
     	"name": "Zero Share",
     	"repo": "https://github.com/ntsd/zero-share",
     	"description": "A client-side secure P2P file sharing using WebRTC."
