@@ -94,6 +94,11 @@
       "name": "Base EKS on AWS",
       "repo": "https://github.com/Cloud-NC-Engineering-Thailand/base-eks-cluster-aws",
       "description": "A collection of Terraform modules to reduce complexity for getting started on AWS EKS"
+    },
+    {
+    	"name": "Zero Share",
+    	"repo": "https://github.com/ntsd/zero-share",
+    	"description": "A client-side secure P2P file sharing using WebRTC."
     }
   ]
 }
