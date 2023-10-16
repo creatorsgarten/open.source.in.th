@@ -114,6 +114,31 @@
     	"name": "PyThaiNLP",
     	"repo": "https://github.com/PyThaiNLP/pythainlp",
     	"description": "Thai Natural Language Processing in Python"
-    }
+    },
+    {
+    	"name": "Visual Assembly Canvas",
+    	"repo": "https://github.com/heypoom/visual-assembly-canvas",
+    	"description": "A visual canvas and bytecode virtual machine for writing assembly to build cool things. Create machines and connect them together."
+		},
+		{
+    	"name": "Open Cybernetic Dance",
+    	"repo": "https://github.com/mitmedialab/opencyberdance",
+    	"description": "An open-source cybernetic dance system built with Three.js and motion capture, based on traditional Thai dances and performance arts, in collaboration with MIT Media Lab and Pichet Klunchun Dance Company."
+		},
+		{
+    	"name": "Spending Visualizer",
+    	"repo": "https://github.com/heypoom/spending-visualizer",
+    	"description": "Parses your transactions from credit card and bank statements, and visualizes how you spend your money. Built with TypeScript, Svelte and SvelteKit."
+		},
+		{
+    	"name": "EventKit",
+    	"repo": "https://github.com/creatorsgarten/eventkit",
+    	"description": "Organizing tech events doesn't have to be chaotic! A collection of tools and applications that help your team run events, from early planning to the chaotic event days. Built with TypeScript, React, Vite, Nest.js, GraphQL and Prisma."
+		},
+		{
+    	"name": "Unicode Sprite",
+    	"repo": "https://github.com/heypoom/unicode-sprite",
+    	"description": "Turn a unicode character into a 4x4 binary matrix. Create cool drawings out of unicode strings."
+		},
   ]
 }
