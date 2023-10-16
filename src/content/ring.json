@@ -109,6 +109,11 @@
     	"name": "MongoDB Thailand User Group Website",
     	"repo": "https://github.com/mongodbthailand/mongodbthailand.github.io",
     	"description": "MongoDB knowledge sharing for Thailand community"
+    },
+    {
+    	"name": "PyThaiNLP",
+    	"repo": "https://github.com/PyThaiNLP/pythainlp",
+    	"description": "Thai Natural Language Processing in Python"
     }
   ]
 }
