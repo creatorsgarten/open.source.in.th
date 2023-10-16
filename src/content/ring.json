@@ -104,6 +104,11 @@
     	"name": "Zero Share",
     	"repo": "https://github.com/ntsd/zero-share",
     	"description": "A client-side secure P2P file sharing using WebRTC."
+    },
+    {
+    	"name": "PyThaiNLP",
+    	"repo": "https://github.com/PyThaiNLP/pythainlp",
+    	"description": "Thai Natural Language Processing in Python"
     }
   ]
 }
