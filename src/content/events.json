@@ -32,7 +32,8 @@
 			"name": "Hacktoberfest Thailand",
 			"date": "21",
 			"location": "Wisesight",
-			"img": "h10.webp"
+			"img": "h10.webp",
+			"link": "https://www.eventpop.me/e/16277/hacktoberfest-2023"
 		},
 		{
 			"name": "Thai MongoDB User Group: Mongoberfest & Pyfest",
