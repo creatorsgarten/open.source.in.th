@@ -139,6 +139,11 @@
 			"name": "Unicode Sprite",
 			"repo": "https://github.com/heypoom/unicode-sprite",
 			"description": "Turn a unicode character into a 4x4 binary matrix. Create cool drawings out of unicode strings."
+		},
+		{
+			"name": "programming.in.th",
+			"repo": "https://github.com/programming-in-th/programming.in.th",
+			"description": "A website that provides you with the fundamentals of algorithmic problem-solving. Practice programming with various problems from Thailand."
 		}
 	]
 }
