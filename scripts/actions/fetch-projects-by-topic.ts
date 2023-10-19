@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url'
 const topic = 'bosf23'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const filename = path.resolve(__dirname, '../../src/content/ring.generated.json')
+const filePath = path.resolve(__dirname, '../../src/content/ring.generated.json')
 
 async function fetchProjects(): Promise<Repository[]> {
 	const url = new URL('https://api.github.com/search/repositories')
@@ -25,7 +25,7 @@ function saveProjectsToJSON(projects: Project[]) {
 	const data = {
 		projects: projects
 	}
-	fs.writeFileSync(filename, JSON.stringify(data, null, 2))
+	fs.writeFileSync(filePath, JSON.stringify(data, null, 2))
 }
 
 async function main() {
