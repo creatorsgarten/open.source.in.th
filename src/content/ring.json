@@ -3,7 +3,8 @@
 		{
 			"name": "Thai Open Source Ring",
 			"repo": "https://www.github.com/creatorsgarten/open.source.in.th",
-			"description": "A webring of 🇹🇭 Open Source Projects and Developers"
+			"description": "A webring of 🇹🇭 Open Source Projects and Developers",
+			"languages": ["Astro","JavaScript","HTML"]
 		},
 		{
 			"name": "ThaiUI",
