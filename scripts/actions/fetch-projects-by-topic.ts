@@ -25,7 +25,12 @@ function saveProjectsToJSON(projects: Project[]) {
 	const data = {
 		projects: projects
 	}
-	fs.writeFileSync(filePath, JSON.stringify(data, null, 2))
+	fs.writeFile(filePath, JSON.stringify(data, null, 2), (err) => {
+		if (err) {
+			throw new Error(`Failed to save projects: ${err.message}`)
+		}
+		console.log('Saved projects to', filePath)
+	})
 }
 
 async function main() {
