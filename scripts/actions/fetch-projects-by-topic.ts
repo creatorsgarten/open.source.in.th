@@ -8,17 +8,38 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const filePath = path.resolve(__dirname, '../../src/content/ring.generated.json')
 
 async function fetchProjects(): Promise<Repository[]> {
+	const repositories = [] as Repository[]
+	const query = `topic:${topic}`
+	const topicLimit = 1000
+	const perPage = 100
+	const totalPages = Math.ceil(topicLimit / perPage)
+	// github public search rate limit is 10 requests per minute
+	// https://docs.github.com/en/rest/search/search?apiVersion=2022-11-28#rate-limit
+	const delay = 6000 // in milliseconds
+
+	for (let page = 1; page <= totalPages; page++) {
+		const resp = await fetchPagedProjects(query, page, perPage)
+		repositories.push(...resp.items)
+		if (resp.items.length < perPage) {
+			break
+		}
+		await new Promise(r => setTimeout(r, delay))
+	}
+
+	return repositories
+}
+
+async function fetchPagedProjects(query: string,page=1, perPage=100): Promise<SearchRepositoriesResponse> {
 	const url = new URL('https://api.github.com/search/repositories')
-	url.searchParams.set('q', `topic:${topic}`)
-	url.searchParams.set('per_page', '100')
+	url.searchParams.set('q', query)
+	url.searchParams.set('page', `${page}`)
+	url.searchParams.set('per_page', `${perPage}`)
 
 	const resp = await fetch(url)
 	if (!resp.ok) {
-		throw new Error(`Failed to fetch projects: ${resp.status} ${await resp.text()}`)
+		throw new Error(`Failed to fetch paged projects: ${resp.status} ${await resp.text()}`)
 	}
-	// TODO: handle case where there are more than 100 results, needs to fetch multiple pages
-	const data = (await resp.json()) as SearchRepositoriesResponse
-	return data.items
+	return (await resp.json()) as SearchRepositoriesResponse
 }
 
 function saveProjectsToJSON(projects: Project[]) {
@@ -35,10 +56,12 @@ function saveProjectsToJSON(projects: Project[]) {
 
 async function main() {
 	const repositories = await fetchProjects()
+	// TODO: should be nice to have repo's languages from Repository.languages_url not just Repository.language
 	const projects = repositories.map<Project>((repo) => ({
 		name: repo.name,
 		repo: repo.html_url,
-		description: repo.description
+		description: repo.description,
+		languages: [repo.language]
 	}))
 	saveProjectsToJSON(projects)
 }
@@ -143,4 +166,5 @@ interface Project {
 	name: string
 	repo: string
 	description: string
+	languages: string[]
 }
