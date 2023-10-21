@@ -139,6 +139,11 @@
 			"name": "Unicode Sprite",
 			"repo": "https://github.com/heypoom/unicode-sprite",
 			"description": "Turn a unicode character into a 4x4 binary matrix. Create cool drawings out of unicode strings."
+		},
+		{
+			"name": "Wonderful Webring",
+			"repo": "https://github.com/wonderfulsoftware/webring",
+			"description": "This “web ring” was created to encourage Thai artists, designers, and developers. Create your own website and share traffic with each other."
 		}
 	]
 }
