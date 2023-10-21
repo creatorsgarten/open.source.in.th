@@ -210,7 +210,12 @@
 			"name": "Clean Architecture in .NET",
 			"repo": "https://github.com/T-T-Software-Solution/dotnet6.tutorial",
 			"description": "A sample project for Clean Architecture in .NET from Zero to Hero."
-		}
+		},
+    {
+      "name": "go-thai-id-validator",
+      "repo": "https://github.com/auycro/go-thai-id-validator",
+      "description": "Golang thai id validator tool"
+    }
   ]
 }
 
