@@ -192,6 +192,11 @@
       "description": "Khmer, Lao, Myanmar, and Thai word segmentation/breaking library and command line"
     },
     {
+      "name": "The Data Engineering Book (Thai)",
+      "repo": "https://github.com/thedataengineeringbook/thedataengineeringbook",
+      "description": "The Data Engineering Book for Thai Data Engineers (Thai version)"
+    },
+    {
       "name": "seema",
       "repo": "https://codeberg.org/mekong-lang/seema",
       "description": "Khmer, Lao, Myanmar, and Thai word segmentation/breaking library in Python written in Rust"
