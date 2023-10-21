@@ -29,6 +29,13 @@
 			"link": "https://www.eventpop.me/e/16434/github-october-2023"
 		},
 		{
+			"name": ".NET Community Meetup",
+			"date": "20",
+			"location": "AreaX",
+			"img": "dotnet.webp",
+			"link": "https://www.eventpop.me/e/16481/dotnet-october-2023"
+		},
+		{
 			"name": "Hacktoberfest Thailand",
 			"date": "21",
 			"location": "Wisesight",

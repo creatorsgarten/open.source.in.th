@@ -144,6 +144,16 @@
 			"name": "Vercel - multi branch deployment",
 			"repo": "https://github.com/kahnwong/vercel-multi-branch-deployment",
 			"description": "Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment."
+    },
+    {
+			"name": "WebMIDICon",
+			"repo": "https://github.com/dtinth/WebMIDICon",
+			"description": "Hackable web-based MIDI controller."
+		},
+		{
+			"name": "chord.source.in.th",
+			"repo": "https://github.com/dtinth/chordsource",
+			"description": "Quickly search for chords of Thai songs."
 		}
 	]
 }
