@@ -1,19 +1,19 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import ring from '../content/ring.json'
-import generatedRing from '../content/ring.generated.json'
 import events from '../content/events.json'
 import sponsors from '../content/sponsors.json'
 
 // TODO: refactor dedupe logic to separate file?
 // TODO: limit projects in index page
-const projects = [...ring.projects]
-for (const project of generatedRing.projects) {
-	const index = projects.findIndex((x) => x.name === project.name)
-	if (index === -1) {
-		projects.push(project)
-	}
+
+interface IProject {
+	name: string
+	description: string
+	repo: string
 }
+
+const projects: Array<IProject> = [...ring.projects]
 ---
 
 <BaseLayout>
@@ -29,12 +29,12 @@ for (const project of generatedRing.projects) {
 			<h1 class="text-center text-3xl font-medium">1. Write code 💻</h1>
 			<div class="main-grid">
 				{
-					projects.map((x) => {
+					projects.map((data) => {
 						return (
-							<a class="project-card group" href={x.repo}>
+							<a class="project-card group" href={data.repo}>
 								<div class="grid gap-1">
-									<h3 class="text-2xl font-medium transition-all">{x.name}</h3>
-									<p class="text-base">{x.description}</p>
+									<h3 class="text-2xl font-medium transition-all">{data.name}</h3>
+									<p class="text-base">{data.description}</p>
 								</div>
 							</a>
 						)
@@ -148,7 +148,6 @@ for (const project of generatedRing.projects) {
 					radial-gradient(at 55% 48%, rgb(136, 19, 55) 0, transparent 47%),
 					radial-gradient(at 81% 52%, rgb(7, 89, 133) 0, transparent 52%),
 					radial-gradient(at 19% 2%, rgb(147, 197, 253) 0, transparent 35%);
-				/* radial-gradient(at 17% 34%, rgb(5, 150, 105) 0, transparent 6%); */
 			}
 
 			button {

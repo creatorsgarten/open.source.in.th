@@ -1,17 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import ring from '../content/ring.json'
-import generatedRing from '../content/ring.generated.json'
 
-// TODO: refactor dedupe logic to separate file?
-const projects = [...ring.projects]
-for (const project of generatedRing.projects) {
-	const index = projects.findIndex((x) => x.name === project.name)
-	if (index === -1) {
-		projects.push(project)
-	}
+interface IProject {
+	name: string
+	description: string
+	repo: string
 }
 
+const projects: Array<IProject> = [...ring.projects]
 ---
 
 <BaseLayout>
