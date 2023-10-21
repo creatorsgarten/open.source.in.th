@@ -141,6 +141,11 @@
 			"description": "Turn a unicode character into a 4x4 binary matrix. Create cool drawings out of unicode strings."
 		},
 		{
+			"name": "Vercel - multi branch deployment",
+			"repo": "https://github.com/kahnwong/vercel-multi-branch-deployment",
+			"description": "Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment."
+    },
+    {
 			"name": "WebMIDICon",
 			"repo": "https://github.com/dtinth/WebMIDICon",
 			"description": "Hackable web-based MIDI controller."
