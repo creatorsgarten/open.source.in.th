@@ -175,6 +175,26 @@
       "name": "Hello World In Different Language!",
       "repo": "https://www.github.com/RealNattawattHongthong/hello-world",
       "description": "Hello World in different Language. Just for Fun"
+    },
+    {
+      "name": "cl-rocksdb",
+      "repo": "https://github.com/veer66/cl-rocksdb",
+      "description": "RocksDB binding for Common Lisp"
+    },
+    {
+      "name": "chamkho-pg",
+      "repo": "https://github.com/veer66/chamkho-pg",
+      "description": "chamkho-pg's objective is enabling PostgreSQL full-text searching on SE Asian languages. Currently, chamkho-pg supports Lao and Thai"
+    },
+    {
+      "name": "chamkho",
+      "repo": "https://codeberg.org/mekong-lang/chamkho",
+      "description": "Khmer, Lao, Myanmar, and Thai word segmentation/breaking library and command line"
+    },
+    {
+      "name": "seema",
+      "repo": "https://codeberg.org/mekong-lang/seema",
+      "description": "Khmer, Lao, Myanmar, and Thai word segmentation/breaking library in Python written in Rust"
     }
   ]
 }
