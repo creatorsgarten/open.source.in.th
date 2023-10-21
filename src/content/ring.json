@@ -139,7 +139,7 @@
     {
       "name": "Unicode Sprite",
       "repo": "https://github.com/heypoom/unicode-sprite",
-      "dscription": "Turn a unicode character into a 4x4 binary matrix. Create cool drawings out of unicode strings."
+      "description": "Turn a unicode character into a 4x4 binary matrix. Create cool drawings out of unicode strings."
     },
     {
       "name": "Learn NVIM",
@@ -170,6 +170,11 @@
       "name": "chord.source.in.th",
       "repo": "https://github.com/dtinth/chordsource",
       "description": "Quickly search for chords of Thai songs."
+    },
+    {
+      "name": "Hello World In Different Language!",
+      "repo": "https://www.github.com/RealNattawattHongthong/hello-world",
+      "description": "Hello World in different Language. Just for Fun"
     }
   ]
 }
