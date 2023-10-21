@@ -29,6 +29,6 @@ a {
 	@apply rounded-full bg-gradient-to-br from-neutral-800 to-neutral-900 px-6 py-3 text-xl text-neutral-50 shadow-sm transition-all hover:scale-[1.02] hover:text-neutral-50 hover:shadow-md;
 }
 
-.card-card {
+.project-card {
 	@apply flex flex-col gap-4 rounded-sm border border-bosf/30 bg-white p-6 shadow-sm transition-all hover:scale-[1.01] hover:border-bosf/50 hover:bg-gradient-to-br;
 }

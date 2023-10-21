@@ -1,12 +1,11 @@
 ---
-import type { HTMLAttributes } from 'astro/types'
-
 interface Props {
 	title: string
 	url: string
 	description: string
 	languages?: string[]
 }
+
 const { title, url, description, languages = [] } = Astro.props
 ---
 
