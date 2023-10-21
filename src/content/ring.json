@@ -94,6 +94,11 @@
       "name": "Base EKS on AWS",
       "repo": "https://github.com/Cloud-NC-Engineering-Thailand/base-eks-cluster-aws",
       "description": "A collection of Terraform modules to reduce complexity for getting started on AWS EKS"
+    },
+    {
+      "name": "Hello World (in a lot of languages).",
+      "repo": "https://github.com/RealNattawattHongthong/hello-world",
+      "description": "`Hello, World!` in a lot of languages."
     }
   ]
 }
