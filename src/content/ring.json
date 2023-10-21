@@ -141,6 +141,11 @@
 			"description": "Turn a unicode character into a 4x4 binary matrix. Create cool drawings out of unicode strings."
 		},
 		{
+			"name": "Mini Game Craft Your Sword",
+			"repo": "https://github.com/tao-Isaman/craft-your-sword",
+			"description": "it's Mini Game it Github, Submit a PR with chosen materials and see if you can forge a legendary blade. Will you craft a gleaming sword or end up with mere shards? Try your luck in our virtual smithy!"
+    },
+    {
 			"name": "Vercel - multi branch deployment",
 			"repo": "https://github.com/kahnwong/vercel-multi-branch-deployment",
 			"description": "Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment."
