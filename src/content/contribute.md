@@ -16,7 +16,8 @@
    {
    	"name": "Your Project Name",
    	"repo": "https://www.github.com/yourusername/yourproject",
-   	"description": "A brief description of your project."
+   	"description": "A brief description of your project.",
+   	"languages": ["Language", "tags", "form", "your", "github", "repository"]
    }
    ```
 
