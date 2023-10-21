@@ -4,7 +4,11 @@
       "name": "Thai Open Source Ring",
       "repo": "https://www.github.com/creatorsgarten/open.source.in.th",
       "description": "A webring of 🇹🇭 Open Source Projects and Developers",
-      "languages": ["Astro", "JavaScript", "HTML"]
+      "languages": [
+        "Astro",
+        "JavaScript",
+        "HTML"
+      ]
     },
     {
       "name": "ThaiUI",
@@ -197,20 +201,28 @@
       "description": "Khmer, Lao, Myanmar, and Thai word segmentation/breaking library in Python written in Rust"
     },
     {
-			"name": "Wonderful Webring",
-			"repo": "https://github.com/wonderfulsoftware/webring",
-			"description": "This “web ring” was created to encourage Thai artists, designers, and developers. Create your own website and share traffic with each other."
+      "name": "Wonderful Webring",
+      "repo": "https://github.com/wonderfulsoftware/webring",
+      "description": "This “web ring” was created to encourage Thai artists, designers, and developers. Create your own website and share traffic with each other."
     },
-    		{
-			"name": ".NET Thailand Website",
-			"repo": "https://github.com/dotnetthailand/dotnetthailand.github.io",
-			"description": "A website for .NET Thailand community to contribute and share knowledge to Thailand programmers."
-		},
-		{
-			"name": "Clean Architecture in .NET",
-			"repo": "https://github.com/T-T-Software-Solution/dotnet6.tutorial",
-			"description": "A sample project for Clean Architecture in .NET from Zero to Hero."
-		}
+    {
+      "name": ".NET Thailand Website",
+      "repo": "https://github.com/dotnetthailand/dotnetthailand.github.io",
+      "description": "A website for .NET Thailand community to contribute and share knowledge to Thailand programmers."
+    },
+    {
+      "name": "Clean Architecture in .NET",
+      "repo": "https://github.com/T-T-Software-Solution/dotnet6.tutorial",
+      "description": "A sample project for Clean Architecture in .NET from Zero to Hero."
+    },
+    {
+      "name": "Thai Law: Telegram Bot",
+      "repo": "https://github.com/itpcc/Thai-Law-Telegram-Bot",
+      "description": "A Telegram bot for search Thai Act article using a text from Krisdika. For quick and crude to search the law.",
+      "languages": [
+        "typescript",
+        "bun"
+      ]
+    }
   ]
 }
-
