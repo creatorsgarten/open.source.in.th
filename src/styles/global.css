@@ -14,7 +14,7 @@ a {
 }
 
 .highlight {
-	@apply from-amber-200 to-amber-300 px-1 hover:bg-gradient-to-br;
+	@apply relative cursor-pointer capitalize transition-all duration-500 before:absolute before:-bottom-2 before:left-0 before:h-1.5 before:w-0 before:rounded-full before:bg-gradient-to-br before:from-neutral-800 before:via-bosf before:to-neutral-500 before:opacity-0 before:transition-all before:duration-500 before:content-[''] hover:before:w-full hover:before:opacity-100;
 }
 
 .ui-container {
