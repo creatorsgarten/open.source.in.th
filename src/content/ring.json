@@ -139,6 +139,16 @@
 			"name": "Unicode Sprite",
 			"repo": "https://github.com/heypoom/unicode-sprite",
 			"description": "Turn a unicode character into a 4x4 binary matrix. Create cool drawings out of unicode strings."
+		},
+		{
+			"name": "WebMIDICon",
+			"repo": "https://github.com/dtinth/WebMIDICon",
+			"description": "Hackable web-based MIDI controller."
+		},
+		{
+			"name": "chord.source.in.th",
+			"repo": "https://github.com/dtinth/chordsource",
+			"description": "Quickly search for chords of Thai songs."
 		}
 	]
 }
