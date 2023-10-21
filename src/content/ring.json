@@ -144,6 +144,26 @@
 			"name": "programming.in.th",
 			"repo": "https://github.com/programming-in-th/programming.in.th",
 			"description": "A website that provides you with the fundamentals of algorithmic problem-solving. Practice programming with various problems from Thailand."
+    },
+    {
+			"name": "Mini Game Craft Your Sword",
+			"repo": "https://github.com/tao-Isaman/craft-your-sword",
+			"description": "it's Mini Game it Github, Submit a PR with chosen materials and see if you can forge a legendary blade. Will you craft a gleaming sword or end up with mere shards? Try your luck in our virtual smithy!"
+    },
+    {
+			"name": "Vercel - multi branch deployment",
+			"repo": "https://github.com/kahnwong/vercel-multi-branch-deployment",
+			"description": "Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment."
+    },
+    {
+			"name": "WebMIDICon",
+			"repo": "https://github.com/dtinth/WebMIDICon",
+			"description": "Hackable web-based MIDI controller."
+		},
+		{
+			"name": "chord.source.in.th",
+			"repo": "https://github.com/dtinth/chordsource",
+			"description": "Quickly search for chords of Thai songs."
 		}
 	]
 }
