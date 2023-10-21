@@ -139,6 +139,16 @@
 			"name": "Unicode Sprite",
 			"repo": "https://github.com/heypoom/unicode-sprite",
 			"description": "Turn a unicode character into a 4x4 binary matrix. Create cool drawings out of unicode strings."
+		},
+		{
+			"name": ".NET Thailand Website",
+			"repo": "https://github.com/dotnetthailand/dotnetthailand.github.io",
+			"description": "A website for .NET Thailand community to contribute and share knowledge to Thailand programmers."
+		},
+		{
+			"name": "Clean Architecture in .NET",
+			"repo": "https://github.com/T-T-Software-Solution/dotnet6.tutorial",
+			"description": "A sample project for Clean Architecture in .NET from Zero to Hero."
 		}
 	]
 }
