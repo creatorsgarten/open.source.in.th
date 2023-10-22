@@ -11,7 +11,7 @@ const { title, url, description, languages = [] } = Astro.props
 
 <div class="project-card group relative">
 	<div class="grid gap-2">
-		<a href={url} class="after:absolute after:inset-0 after:content-['']">
+		<a href={url} class="after:absolute after:inset-0 after:content-[''] after:focus:border-2 after:focus:transition-all focus:after:border-bosf/50 group-focus:scale-[1.01]">
 			<h3 class="text-2xl font-medium transition-all">
 				{title}
 			</h3>
