@@ -210,7 +210,12 @@
 			"name": "Clean Architecture in .NET",
 			"repo": "https://github.com/T-T-Software-Solution/dotnet6.tutorial",
 			"description": "A sample project for Clean Architecture in .NET from Zero to Hero."
-		}
+		},
+    {
+      "name": "MNIST-REACT.JS",
+      "repo": "https://github.com/WasinUddy/MNIST-JS-Demo-Website",
+      "description": "Deploying Simple Python MNIST Tensorflow Model to an interactive React.js Website"
+    }
   ]
 }
 
