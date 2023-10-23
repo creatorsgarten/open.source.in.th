@@ -4,6 +4,7 @@ import ring from '../content/ring.json'
 import generatedRing from '../content/ring.generated.json'
 import events from '../content/events.json'
 import sponsors from '../content/sponsors.json'
+import EventCard from '../components/EventCard.astro'
 
 // TODO: refactor dedupe logic to separate file?
 // TODO: limit projects in index page
@@ -14,11 +15,28 @@ interface IProject {
 	repo: string
 }
 
+interface IEvent {
+	name: string
+	date: string
+	location: string
+	img: string
+	link: string
+}
+
 const projects: IProject[] = [...ring.projects]
 	.concat([...generatedRing.projects])
 	.filter((x, i, a) => a.findIndex((y) => y.name === x.name) === i)
 
-const shuffle = (array: IProject[]) => {
+const event: IEvent[] = [...events.events]
+	.filter((x, i, a) => a.findIndex((y) => y.name === x.name) === i)
+	.sort((a, b) => {
+		const aDate = new Date(a.date)
+		const bDate = new Date(b.date)
+		return aDate.getTime() - bDate.getTime()
+	})
+	.slice(0, 6)
+
+const shuffle = (array: IProject[]): IProject[] => {
 	for (let i = array.length - 1; i > 0; i--) {
 		const j = Math.floor(Math.random() * (i + 1))
 		;[array[i], array[j]] = [array[j], array[i]]
@@ -62,41 +80,13 @@ const shuffle = (array: IProject[]) => {
 			<h1 class="text-center text-3xl font-medium">2. Join events 🙌</h1>
 			<div class="main-grid">
 				{
-					[...events.events].map((x) => {
-						return (
-							<a
-								class={
-									'group flex flex-col gap-4 transition-all hover:scale-[1.005] ' +
-									(x.link ? '' : 'pointer-events-none')
-								}
-								href={x.link || 'javascript:'}
-							>
-								<div class="relative overflow-hidden">
-									<img
-										class={'aspect-video w-full bg-neutral-200 ' + (x.link ? '' : 'opacity-50')}
-										src={`/events/${x.img}`}
-										alt={x.name}
-									/>
-									{x.link ? null : (
-										<div class="absolute inset-0 flex flex-col justify-center">
-											<div class="-rotate-12 scale-125 bg-black/50 p-2 text-center text-white/80 backdrop-blur-md">
-												(to be announced)
-											</div>
-										</div>
-									)}
-								</div>
-								<div class="grid gap-1">
-									<h3 class=" text-xl font-medium underline-offset-2 group-hover:underline">
-										{x.name}
-									</h3>
-									<div>
-										{x.location} | {x.date} October '23
-									</div>
-								</div>
-							</a>
-						)
+					event.map((x) => {
+						return <EventCard events={x} />
 					})
 				}
+			</div>
+			<div class="text-center text-lg">
+				<a href="/events" class="highlight underline">Explore More Events →</a>
 			</div>
 		</section>
 		<section class="ui-container grid gap-6 text-lg">
