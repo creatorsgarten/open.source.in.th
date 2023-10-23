@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import ring from '../content/ring.json'
+import generatedRing from '../content/ring.generated.json'
 import events from '../content/events.json'
 import sponsors from '../content/sponsors.json'
 
@@ -13,7 +14,17 @@ interface IProject {
 	repo: string
 }
 
-const projects: Array<IProject> = [...ring.projects]
+const projects: IProject[] = [...ring.projects]
+	.concat([...generatedRing.projects])
+	.filter((x, i, a) => a.findIndex((y) => y.name === x.name) === i)
+
+const shuffle = (array: IProject[]) => {
+	for (let i = array.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1))
+		;[array[i], array[j]] = [array[j], array[i]]
+	}
+	return array
+}
 ---
 
 <BaseLayout>
@@ -29,16 +40,18 @@ const projects: Array<IProject> = [...ring.projects]
 			<h1 class="text-center text-3xl font-medium">1. Write code 💻</h1>
 			<div class="main-grid">
 				{
-					projects.map((data) => {
-						return (
-							<a class="project-card group" href={data.repo}>
-								<div class="grid gap-1">
-									<h3 class="text-2xl font-medium transition-all">{data.name}</h3>
-									<p class="text-base">{data.description}</p>
-								</div>
-							</a>
-						)
-					})
+					shuffle(projects)
+						.slice(0, 6)
+						.map((x) => {
+							return (
+								<a class="project-card group" href={x.repo}>
+									<div class="grid gap-2">
+										<h3 class="text-2xl font-medium transition-all">{x.name}</h3>
+										<p class="text-base">{x.description}</p>
+									</div>
+								</a>
+							)
+						})
 				}
 			</div>
 			<div class="text-center text-lg">
@@ -148,6 +161,7 @@ const projects: Array<IProject> = [...ring.projects]
 					radial-gradient(at 55% 48%, rgb(136, 19, 55) 0, transparent 47%),
 					radial-gradient(at 81% 52%, rgb(7, 89, 133) 0, transparent 52%),
 					radial-gradient(at 19% 2%, rgb(147, 197, 253) 0, transparent 35%);
+				/* radial-gradient(at 17% 34%, rgb(5, 150, 105) 0, transparent 6%); */
 			}
 
 			button {
