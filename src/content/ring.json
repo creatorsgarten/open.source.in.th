@@ -201,7 +201,7 @@
 			"repo": "https://github.com/wonderfulsoftware/webring",
 			"description": "This “web ring” was created to encourage Thai artists, designers, and developers. Create your own website and share traffic with each other."
     },
-    		{
+    {
 			"name": ".NET Thailand Website",
 			"repo": "https://github.com/dotnetthailand/dotnetthailand.github.io",
 			"description": "A website for .NET Thailand community to contribute and share knowledge to Thailand programmers."
@@ -210,7 +210,12 @@
 			"name": "Clean Architecture in .NET",
 			"repo": "https://github.com/T-T-Software-Solution/dotnet6.tutorial",
 			"description": "A sample project for Clean Architecture in .NET from Zero to Hero."
-		}
+		},
+    {
+      "name": "UUID Clipboard",
+			"repo": "https://github.com/oat9002/uuid-clipboard",
+			"description": "Auto generate UUID and copy to clipboard by golang."
+    }
   ]
 }
 
