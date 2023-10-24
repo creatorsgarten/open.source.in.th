@@ -6,6 +6,7 @@ interface IProject {
 	name: string
 	description: string
 	repo: string
+	languages?: Array<string>
 }
 
 const projects: Array<IProject> = [...ring.projects]
@@ -14,16 +15,18 @@ const projects: Array<IProject> = [...ring.projects]
 <BaseLayout>
 	<section class="ui-container mt-6 flex flex-col items-center justify-center gap-12 md:mt-8">
 		<h1 class="text-center text-3xl font-medium">👾 Project List</h1>
+		<!-- TODO: languages should display as tags -->
 		<div class="main-grid">
 			{
-				projects.map((x) => {
+				projects.map((project) => {
 					return (
-						<a class="project-card group" href={x.repo}>
-								<div class="grid gap-2">
-									<h3 class="text-2xl font-medium transition-all">{x.name}</h3>
-									<p class="text-base">{x.description}</p>
-								</div>
-							</a>
+						<a class="project-card group" href={project.repo}>
+							<div class="grid gap-1">
+								<h3 class="text-2xl font-medium transition-all">{project.name}</h3>
+								<p class="text-base">{project.description}</p>
+								{project.languages && <p>{project.languages?.join(', ')}</p>}
+							</div>
+						</a>
 					)
 				})
 			}
