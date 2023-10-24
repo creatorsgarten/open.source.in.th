@@ -210,6 +210,11 @@
 			"name": "Clean Architecture in .NET",
 			"repo": "https://github.com/T-T-Software-Solution/dotnet6.tutorial",
 			"description": "A sample project for Clean Architecture in .NET from Zero to Hero."
+		},
+		{
+			"name": "On This Day",
+			"repo": "https://github.com/n-jaisabai/on-this-day",
+			"description": "Curate historical events for each day in Markdown format, featuring the date and concise event descriptions for easy exploration of notable moments in history."
 		}
   ]
 }
