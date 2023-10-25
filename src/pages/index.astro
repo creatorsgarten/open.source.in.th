@@ -60,12 +60,12 @@ const shuffle = (array: IProject[]): IProject[] => {
 				{
 					shuffle(projects)
 						.slice(0, 6)
-						.map((x) => {
+						.map((projects) => {
 							return (
-								<a class="project-card group" href={x.repo}>
+								<a class="project-card group" href={projects.repo}>
 									<div class="grid gap-2">
-										<h3 class="text-2xl font-medium transition-all">{x.name}</h3>
-										<p class="text-base">{x.description}</p>
+										<h3 class="text-2xl font-medium transition-all">{projects.name}</h3>
+										<p class="text-base">{projects.description}</p>
 									</div>
 								</a>
 							)
@@ -151,7 +151,6 @@ const shuffle = (array: IProject[]): IProject[] => {
 					radial-gradient(at 55% 48%, rgb(136, 19, 55) 0, transparent 47%),
 					radial-gradient(at 81% 52%, rgb(7, 89, 133) 0, transparent 52%),
 					radial-gradient(at 19% 2%, rgb(147, 197, 253) 0, transparent 35%);
-				/* radial-gradient(at 17% 34%, rgb(5, 150, 105) 0, transparent 6%); */
 			}
 
 			button {
