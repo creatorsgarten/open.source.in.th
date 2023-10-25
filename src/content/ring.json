@@ -207,20 +207,25 @@
       "description": "Khmer, Lao, Myanmar, and Thai word segmentation/breaking library in Python written in Rust"
     },
     {
-      "name": "Wonderful Webring",
-      "repo": "https://github.com/wonderfulsoftware/webring",
-      "description": "This “web ring” was created to encourage Thai artists, designers, and developers. Create your own website and share traffic with each other."
+			"name": "Wonderful Webring",
+			"repo": "https://github.com/wonderfulsoftware/webring",
+			"description": "This “web ring” was created to encourage Thai artists, designers, and developers. Create your own website and share traffic with each other."
     },
     {
-      "name": ".NET Thailand Website",
-      "repo": "https://github.com/dotnetthailand/dotnetthailand.github.io",
-      "description": "A website for .NET Thailand community to contribute and share knowledge to Thailand programmers."
-    },
-    {
-      "name": "Clean Architecture in .NET",
-      "repo": "https://github.com/T-T-Software-Solution/dotnet6.tutorial",
-      "description": "A sample project for Clean Architecture in .NET from Zero to Hero."
-    },
+			"name": ".NET Thailand Website",
+			"repo": "https://github.com/dotnetthailand/dotnetthailand.github.io",
+			"description": "A website for .NET Thailand community to contribute and share knowledge to Thailand programmers."
+		},
+		{
+			"name": "Clean Architecture in .NET",
+			"repo": "https://github.com/T-T-Software-Solution/dotnet6.tutorial",
+			"description": "A sample project for Clean Architecture in .NET from Zero to Hero."
+		},
+	      {
+      "name": "OpenThaiGPT",
+      "repo": "https://github.com/OpenThaiGPT/openthaigpt",
+      "description": "OpenThaiGPT focuses on developing a Thai Chatbot system to have capabilities equivalent to ChatGPT, as well as being able to connect to external systems and be able to retrieve data flexibly. Easily expandable and customizable and developed into Free open source software for everyone."
+    }
     {
       "name": "Thai Law: Telegram Bot",
       "repo": "https://github.com/itpcc/Thai-Law-Telegram-Bot",
@@ -239,6 +244,6 @@
       "name": "React useless hook",
       "repo": "https://github.com/narze/react-useless",
       "description": "A collection of React Custom Hooks that should not belong anywhere."
-    },
+    }
   ]
 }
