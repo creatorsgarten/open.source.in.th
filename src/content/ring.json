@@ -226,7 +226,12 @@
 			"repo": "https://github.com/T-T-Software-Solution/dotnet6.tutorial",
 			"description": "A sample project for Clean Architecture in .NET from Zero to Hero."
 		},
-	      {
+    {
+      "name": "Metro Fare",
+			"repo": "https://github.com/hspotlight/metro-fare",
+			"description": "a software application for route navigation of Mass Transit System in Bangkok, Thailand."
+		},
+    {
       "name": "OpenThaiGPT",
       "repo": "https://github.com/OpenThaiGPT/openthaigpt",
       "description": "OpenThaiGPT focuses on developing a Thai Chatbot system to have capabilities equivalent to ChatGPT, as well as being able to connect to external systems and be able to retrieve data flexibly. Easily expandable and customizable and developed into Free open source software for everyone."
