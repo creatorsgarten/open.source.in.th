@@ -322,6 +322,16 @@
       "name": "React useless hook",
       "repo": "https://github.com/narze/react-useless",
       "description": "A collection of React Custom Hooks that should not belong anywhere."
+    },
+    {
+      "name": "Instagramizer",
+      "repo": "https://github.com/WasinUddy/Instagramizer",
+      "description": "A CUI (with cool interface) program that help photographer batch squarefitted their image and optimize for instagram posting."
+    },
+    {
+      "name": "ESP-32 Ultimate Weather station",
+      "repo": "https://github.com/WasinUddy/Homelab-Environments-Monitor",
+      "description": "An advanced weather station powered by ESP-32 and BME-280. Features a locally-hosted web interface on the ESP-32 and offers long-term monitoring capabilities through Prometheus and Grafana."
     }
   ]
 }
