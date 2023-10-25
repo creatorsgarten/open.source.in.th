@@ -232,6 +232,11 @@
 			"description": "A sample project for Clean Architecture in .NET from Zero to Hero."
 		},
     {
+      "name": "totp",
+      "repo": "https://github.com/kahnwong/totp",
+      "description": "CLI TOTP token generator with autocomplete."
+		},
+    {
       "name": "libdatrie",
       "repo": "https://github.com/tlwg/libdatrie",
       "description": "Double-Array Trie Library"
