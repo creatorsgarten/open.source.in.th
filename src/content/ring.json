@@ -231,6 +231,11 @@
 			"repo": "https://github.com/T-T-Software-Solution/dotnet6.tutorial",
 			"description": "A sample project for Clean Architecture in .NET from Zero to Hero."
 		},
+		{
+			"name": "Hand Detection control every things",
+			"repo": "https://github.com/alphapum/hand_detect_v89_kb",
+			"description": "Detection hand and posture send data to mqtt to board KidBright",
+		},
     {
       "name": "UUID Clipboard",
 			"repo": "https://github.com/oat9002/uuid-clipboard",
