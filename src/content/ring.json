@@ -310,6 +310,11 @@
       "name": "React useless hook",
       "repo": "https://github.com/narze/react-useless",
       "description": "A collection of React Custom Hooks that should not belong anywhere."
+    },
+    {
+      "name": "promise-until-tired",
+      "repo": "https://github.com/wongnai/promise-until-tired",
+      "description": "Too long unresolved promise is tired and I gonna give up. (Promise with timeout)"
     }
   ]
 }
