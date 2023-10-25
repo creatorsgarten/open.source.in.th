@@ -38,7 +38,10 @@
     {
       "name": "CodeJourney: Internship Stories",
       "repo": "https://github.com/NongSnail/codejourney_internship_stories",
-      "description": "Collecting Internship Articles in the Programmer"
+      "description": "Collecting Internship Articles in the Programmer",
+      "languages": [
+        "Markdown"
+      ]
     },
     {
       "name": "Parliament Watch",
@@ -183,7 +186,10 @@
     {
       "name": "cl-rocksdb",
       "repo": "https://github.com/veer66/cl-rocksdb",
-      "description": "RocksDB binding for Common Lisp"
+      "description": "RocksDB binding for Common Lisp",
+      "languages": [
+        "Lisp"
+      ]
     },
     {
       "name": "chamkho-pg",
@@ -223,6 +229,16 @@
         "typescript",
         "bun"
       ]
-    }
+    },
+    {
+      "name": "go-thai-id-validator",
+      "repo": "https://github.com/auycro/go-thai-id-validator",
+      "description": "Golang thai id validator tool"
+    },
+    {
+      "name": "React useless hook",
+      "repo": "https://github.com/narze/react-useless",
+      "description": "A collection of React Custom Hooks that should not belong anywhere."
+    },
   ]
 }
