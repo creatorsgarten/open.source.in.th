@@ -4,7 +4,11 @@
       "name": "Thai Open Source Ring",
       "repo": "https://www.github.com/creatorsgarten/open.source.in.th",
       "description": "A webring of 🇹🇭 Open Source Projects and Developers",
-      "languages": ["Astro", "JavaScript", "HTML"]
+      "languages": [
+        "Astro",
+        "JavaScript",
+        "HTML"
+      ]
     },
     {
       "name": "ThaiUI",
@@ -34,7 +38,10 @@
     {
       "name": "CodeJourney: Internship Stories",
       "repo": "https://github.com/NongSnail/codejourney_internship_stories",
-      "description": "Collecting Internship Articles in the Programmer"
+      "description": "Collecting Internship Articles in the Programmer",
+      "languages": [
+        "Markdown"
+      ]
     },
     {
       "name": "Parliament Watch",
@@ -179,7 +186,10 @@
     {
       "name": "cl-rocksdb",
       "repo": "https://github.com/veer66/cl-rocksdb",
-      "description": "RocksDB binding for Common Lisp"
+      "description": "RocksDB binding for Common Lisp",
+      "languages": [
+        "Lisp"
+      ]
     },
     {
       "name": "chamkho-pg",
@@ -201,7 +211,7 @@
 			"repo": "https://github.com/wonderfulsoftware/webring",
 			"description": "This “web ring” was created to encourage Thai artists, designers, and developers. Create your own website and share traffic with each other."
     },
-    		{
+    {
 			"name": ".NET Thailand Website",
 			"repo": "https://github.com/dotnetthailand/dotnetthailand.github.io",
 			"description": "A website for .NET Thailand community to contribute and share knowledge to Thailand programmers."
@@ -216,6 +226,24 @@
       "repo": "https://github.com/OpenThaiGPT/openthaigpt",
       "description": "OpenThaiGPT focuses on developing a Thai Chatbot system to have capabilities equivalent to ChatGPT, as well as being able to connect to external systems and be able to retrieve data flexibly. Easily expandable and customizable and developed into Free open source software for everyone."
     }
+    {
+      "name": "Thai Law: Telegram Bot",
+      "repo": "https://github.com/itpcc/Thai-Law-Telegram-Bot",
+      "description": "A Telegram bot for search Thai Act article using a text from Krisdika. For quick and crude to search the law.",
+      "languages": [
+        "typescript",
+        "bun"
+      ]
+    },
+    {
+      "name": "go-thai-id-validator",
+      "repo": "https://github.com/auycro/go-thai-id-validator",
+      "description": "Golang thai id validator tool"
+    },
+    {
+      "name": "React useless hook",
+      "repo": "https://github.com/narze/react-useless",
+      "description": "A collection of React Custom Hooks that should not belong anywhere."
+    }
   ]
 }
-
