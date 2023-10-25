@@ -232,6 +232,31 @@
 			"description": "A sample project for Clean Architecture in .NET from Zero to Hero."
 		},
     {
+      "name": "libdatrie",
+      "repo": "https://github.com/tlwg/libdatrie",
+      "description": "Double-Array Trie Library"
+    },
+    {
+      "name": "libthai",
+      "repo": "https://github.com/tlwg/libthai",
+      "description": "LibThai is a set of Thai language support routines."
+    },
+    {
+      "name": "fonts-tlwg",
+      "repo": "https://github.com/tlwg/fonts-tlwg",
+      "description": "Fonts-TLWG is a collection of Thai scalable fonts available under free licenses."
+    },
+    {
+      "name": "scim-thai",
+      "repo": "https://github.com/tlwg/scim-thai",
+      "description": "This is SCIM IMEngine module for Thai, based on libthai library."
+    },
+    {
+      "name": "ibus-libthai",
+      "repo": "https://github.com/tlwg/ibus-libthai",
+      "description": "IBus-LibThai is a Thai input method engine for IBus, based on the LibThai library."
+    },
+    {
       "name": "MNIST-REACT.JS",
       "repo": "https://github.com/WasinUddy/MNIST-JS-Demo-Website",
       "description": "Deploying Simple Python MNIST Tensorflow Model to an interactive React.js Website"
