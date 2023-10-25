@@ -1,5 +1,6 @@
 import fs from 'fs'
 import path from 'path'
+import process from 'node:process'
 import { fileURLToPath } from 'url'
 
 const topic = 'bosf23'
@@ -7,11 +8,13 @@ const topic = 'bosf23'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const filePath = path.resolve(__dirname, '../../src/content/ring.generated.json')
 
-async function fetchProjects(): Promise<Repository[]> {
+async function fetchProjects(topicLimit: number): Promise<Repository[]> {
 	const repositories = [] as Repository[]
 	const query = `topic:${topic}`
-	const topicLimit = 1000
 	const perPage = 100
+	if (topicLimit < perPage) {
+		topicLimit = perPage
+	}
 	const totalPages = Math.ceil(topicLimit / perPage)
 	// github public search rate limit is 10 requests per minute
 	// https://docs.github.com/en/rest/search/search?apiVersion=2022-11-28#rate-limit
@@ -23,13 +26,17 @@ async function fetchProjects(): Promise<Repository[]> {
 		if (resp.items.length < perPage) {
 			break
 		}
-		await new Promise(r => setTimeout(r, delay))
+		await new Promise((r) => setTimeout(r, delay))
 	}
 
 	return repositories
 }
 
-async function fetchPagedProjects(query: string,page=1, perPage=100): Promise<SearchRepositoriesResponse> {
+async function fetchPagedProjects(
+	query: string,
+	page = 1,
+	perPage = 100
+): Promise<SearchRepositoriesResponse> {
 	const url = new URL('https://api.github.com/search/repositories')
 	url.searchParams.set('q', query)
 	url.searchParams.set('page', `${page}`)
@@ -55,7 +62,8 @@ function saveProjectsToJSON(projects: Project[]) {
 }
 
 async function main() {
-	const repositories = await fetchProjects()
+	const topicLimit = Number(process.argv[2] ?? 1000)
+	const repositories = await fetchProjects(topicLimit)
 	// TODO: should be nice to have repo's languages from Repository.languages_url not just Repository.language
 	const projects = repositories.map<Project>((repo) => ({
 		name: repo.name,

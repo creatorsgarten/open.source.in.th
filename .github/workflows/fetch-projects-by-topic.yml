@@ -43,9 +43,9 @@ jobs:
         run: |
           pnpm install -g typescript ts-node
 
-      - name: Execute script
+      - name: Fetch first 1000 projects
         run: |
-          ts-node --esm scripts/actions/fetch-projects-by-topic.ts
+          ts-node --esm scripts/actions/fetch-projects-by-topic.ts 1000
 
       - name: Add, commit and push to the repository
         uses: stefanzweifel/git-auto-commit-action@v5
