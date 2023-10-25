@@ -4,18 +4,19 @@ import ring from '../content/ring.json'
 import generatedRing from '../content/ring.generated.json'
 import events from '../content/events.json'
 import sponsors from '../content/sponsors.json'
+import CardLink from '../components/CardLink.astro'
 
 // TODO: refactor dedupe logic to separate file?
 // TODO: limit projects in index page
 const projects = [...ring.projects]
-for (const project of generatedRing.projects) {
+for (const project of generatedRing.projects as typeof ring.projects) {
 	const index = projects.findIndex((x) => x.name === project.name)
 	if (index === -1) {
 		projects.push(project)
 	}
 }
 
-const shuffle = (array: string[]) => {
+function shuffle<T>(array: T[]): T[] {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
@@ -40,12 +41,7 @@ const shuffle = (array: string[]) => {
 				{
 					shuffle(projects).slice(0, 6).map((x) => {
 						return (
-							<a class="project-card group" href={x.repo}>
-								<div class="grid gap-2">
-									<h3 class="text-2xl font-medium transition-all">{x.name}</h3>
-									<p class="text-base">{x.description}</p>
-								</div>
-							</a>
+							<CardLink title={x.name} url={x.repo} description={x.description} />
 						)
 					})
 				}
