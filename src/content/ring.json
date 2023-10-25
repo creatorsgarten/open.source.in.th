@@ -221,6 +221,11 @@
 			"repo": "https://github.com/dotnetthailand/dotnetthailand.github.io",
 			"description": "A website for .NET Thailand community to contribute and share knowledge to Thailand programmers."
 		},
+    {
+      "name": "SEA-EYE",
+			"repo": "https://github.com/vtno/seaeye",
+			"description": "a collection of useful Github actions and workflows used to build CI pipelines for TypeScript applications."
+		},
 		{
 			"name": "Clean Architecture in .NET",
 			"repo": "https://github.com/T-T-Software-Solution/dotnet6.tutorial",
