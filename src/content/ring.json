@@ -232,6 +232,11 @@
 			"description": "A sample project for Clean Architecture in .NET from Zero to Hero."
 		},
     {
+      "name": "pgconn",
+      "repo": "https://github.com/kahnwong/pgconn",
+      "description": "pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is exited."
+		},
+    {
       "name": "Metro Fare",
 			"repo": "https://github.com/hspotlight/metro-fare",
 			"description": "a software application for route navigation of Mass Transit System in Bangkok, Thailand."
