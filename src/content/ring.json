@@ -232,6 +232,11 @@
 			"description": "A sample project for Clean Architecture in .NET from Zero to Hero."
 		},
     {
+      "name": "UUID Clipboard",
+			"repo": "https://github.com/oat9002/uuid-clipboard",
+			"description": "Auto generate UUID and copy to clipboard by golang."
+		},
+    {
       "name": "ohmyps-git-alias",
       "repo": "https://github.com/ReiiYuki/ohmyps-git-alias",
       "description": "oh my zsh Git alias liked but on Powershell",
