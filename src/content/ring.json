@@ -1,217 +1,225 @@
 {
-	"projects": [
-		{
-			"name": "Thai Open Source Ring",
-			"repo": "https://www.github.com/creatorsgarten/open.source.in.th",
-			"description": "A webring of 🇹🇭 Open Source Projects and Developers",
-			"languages": ["Astro", "JavaScript", "HTML"]
-		},
-		{
-			"name": "ThaiUI",
-			"repo": "https://www.github.com/oseda/thaiui",
-			"description": "Open-source UI library, design system, templates and plugins for Thai websites."
-		},
-		{
-			"name": "Elysia",
-			"repo": "https://www.github.com/elysiajs/elysia",
-			"description": "TypeScript framework supercharged by Bun with End-to-End Type Safety."
-		},
-		{
-			"name": "Contentsgarten",
-			"repo": "https://www.github.com/creatorsgarten/contentsgarten",
-			"description": "A modern, markdown-based cloud-native wiki engine"
-		},
-		{
-			"name": "techcal.dev",
-			"repo": "https://github.com/creatorsgarten/techcal.dev",
-			"description": "Calendar of Tech Event in your town"
-		},
-		{
-			"name": "Data Science Blocks",
-			"repo": "https://github.com/DataSciBlock/DataSciBlock",
-			"description": "Use blocks for data science. Graph, dataset, mutating data."
-		},
-		{
-			"name": "CodeJourney: Internship Stories",
-			"repo": "https://github.com/NongSnail/codejourney_internship_stories",
-			"description": "Collecting Internship Articles in the Programmer",
-			"languages": ["Markdown"]
-		},
-		{
-			"name": "Parliament Watch",
-			"repo": "https://github.com/wevisdemo/parliament-watch",
-			"description": "Record and visualise the Thai parliament information including politicians, assemblies, bills, voting processes, and promises. (Free stickers for Hacktoberfest!)"
-		},
-		{
-			"name": "Joy Treasury",
-			"repo": "https://github.com/siriwatknp/joy-treasury",
-			"description": "Design inspiration to reality with Joy UI."
-		},
-		{
-			"name": "GPTForAnything",
-			"repo": "https://github.com/ksupasate/GPTForAnything",
-			"description": "a knowledge source repository dedicated to collecting various resources related to the application of GPT (Generative Pre-trained Transformer) in a wide range of domains"
-		},
-		{
-			"name": "Resumette",
-			"repo": "https://github.com/narze/resume",
-			"description": "Printer-friendly standard résumé. Any sections can be hidden to fit into a single page of paper."
-		},
-		{
-			"name": "URGROWTH",
-			"repo": "https://github.com/urgrowth/urgrowth",
-			"description": "We are a medium of creative youths with a passion for personal growth and development."
-		},
-		{
-			"name": "Chromatone",
-			"repo": "https://github.com/chromatone/chromatone.center",
-			"description": "Interactive design laboratory for communicating music with colors and shapes"
-		},
-		{
-			"name": "Nammatham",
-			"repo": "https://github.com/thaitype/nammatham",
-			"description": "Type-safe Azure Function Library, writing the Azure serverless function with confidence."
-		},
-		{
-			"name": "Thai Baht Text js",
-			"repo": "https://github.com/antronic/thai-baht-text-js",
-			"description": "JavaScript library for convert numerical or number values into Thai Baht text"
-		},
-		{
-			"name": "Killercoda Docker Lab",
-			"repo": "https://github.com/Cloud-NC-Engineering-Thailand/cloudnc-docker-lab",
-			"description": "The source code for Killercoda Docker Lab available here: https://killercoda.com/cloudnc"
-		},
-		{
-			"name": "TiDB Multi Kubernetes Cluster",
-			"repo": "https://github.com/Cloud-NC-Engineering-Thailand/tidb-multi-kube-cluster",
-			"description": "A setup guideline to demonstrate how we use multi Kubernetes clusters for database scaling"
-		},
-		{
-			"name": "Kubernetes Traffic Failover",
-			"repo": "https://github.com/Cloud-NC-Engineering-Thailand/kube-split-traffic-failover",
-			"description": "A setup guideline to demonstrate how we use another cluster for failover"
-		},
-		{
-			"name": "Base EKS on AWS",
-			"repo": "https://github.com/Cloud-NC-Engineering-Thailand/base-eks-cluster-aws",
-			"description": "A collection of Terraform modules to reduce complexity for getting started on AWS EKS"
-		},
-		{
-			"name": "Thai Citizen ID Validator",
-			"repo": "https://github.com/jukbot/thai-citizen-id-validator",
-			"description": "A Thai Citizen ID validator with 0 dependencies."
-		},
-		{
-			"name": "Zero Share",
-			"repo": "https://github.com/ntsd/zero-share",
-			"description": "A client-side secure P2P file sharing using WebRTC."
-		},
-		{
-			"name": "MongoDB Thailand User Group Website",
-			"repo": "https://github.com/mongodbthailand/mongodbthailand.github.io",
-			"description": "MongoDB knowledge sharing for Thailand community"
-		},
-		{
-			"name": "PyThaiNLP",
-			"repo": "https://github.com/PyThaiNLP/pythainlp",
-			"description": "Thai Natural Language Processing in Python"
-		},
-		{
-			"name": "Visual Assembly Canvas",
-			"repo": "https://github.com/heypoom/visual-assembly-canvas",
-			"description": "A visual canvas and bytecode virtual machine for writing assembly to build cool things. Create machines and connect them together."
-		},
-		{
-			"name": "Open Cybernetic Dance",
-			"repo": "https://github.com/mitmedialab/opencyberdance",
-			"description": "An open-source cybernetic dance system built with Three.js and motion capture, based on traditional Thai dances and performance arts, in collaboration with MIT Media Lab and Pichet Klunchun Dance Company."
-		},
-		{
-			"name": "Spending Visualizer",
-			"repo": "https://github.com/heypoom/spending-visualizer",
-			"description": "Parses your transactions from credit card and bank statements, and visualizes how you spend your money. Built with TypeScript, Svelte and SvelteKit."
-		},
-		{
-			"name": "EventKit",
-			"repo": "https://github.com/creatorsgarten/eventkit",
-			"description": "Organizing tech events doesn't have to be chaotic! A collection of tools and applications that help your team run events, from early planning to the chaotic event days. Built with TypeScript, React, Vite, Nest.js, GraphQL and Prisma."
-		},
-		{
-			"name": "Unicode Sprite",
-			"repo": "https://github.com/heypoom/unicode-sprite",
-			"description": "Turn a unicode character into a 4x4 binary matrix. Create cool drawings out of unicode strings."
-		},
-		{
-			"name": "Learn NVIM",
-			"repo": "https://github.com/socool/learn-nvim",
-			"description": "Learn NeoVim your personal development editor.By translating from English to Thai."
-		},
-		{
-			"name": "programming.in.th",
-			"repo": "https://github.com/programming-in-th/programming.in.th",
-			"description": "A website that provides you with the fundamentals of algorithmic problem-solving. Practice programming with various problems from Thailand."
-		},
-		{
-			"name": "Mini Game Craft Your Sword",
-			"repo": "https://github.com/tao-Isaman/craft-your-sword",
-			"description": "it's Mini Game it Github, Submit a PR with chosen materials and see if you can forge a legendary blade. Will you craft a gleaming sword or end up with mere shards? Try your luck in our virtual smithy!"
-		},
-		{
-			"name": "Vercel - multi branch deployment",
-			"repo": "https://github.com/kahnwong/vercel-multi-branch-deployment",
-			"description": "Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment."
-		},
-		{
-			"name": "WebMIDICon",
-			"repo": "https://github.com/dtinth/WebMIDICon",
-			"description": "Hackable web-based MIDI controller."
-		},
-		{
-			"name": "chord.source.in.th",
-			"repo": "https://github.com/dtinth/chordsource",
-			"description": "Quickly search for chords of Thai songs."
-		},
-		{
-			"name": "Hello World In Different Language!",
-			"repo": "https://www.github.com/RealNattawattHongthong/hello-world",
-			"description": "Hello World in different Language. Just for Fun"
-		},
-		{
-			"name": "cl-rocksdb",
-			"repo": "https://github.com/veer66/cl-rocksdb",
-			"description": "RocksDB binding for Common Lisp",
-			"languages": ["Lisp"]
-		},
-		{
-			"name": "chamkho-pg",
-			"repo": "https://github.com/veer66/chamkho-pg",
-			"description": "chamkho-pg's objective is enabling PostgreSQL full-text searching on SE Asian languages. Currently, chamkho-pg supports Lao and Thai"
-		},
-		{
-			"name": "chamkho",
-			"repo": "https://codeberg.org/mekong-lang/chamkho",
-			"description": "Khmer, Lao, Myanmar, and Thai word segmentation/breaking library and command line"
-		},
-		{
-			"name": "seema",
-			"repo": "https://codeberg.org/mekong-lang/seema",
-			"description": "Khmer, Lao, Myanmar, and Thai word segmentation/breaking library in Python written in Rust"
-		},
-		{
-			"name": "Wonderful Webring",
-			"repo": "https://github.com/wonderfulsoftware/webring",
-			"description": "This “web ring” was created to encourage Thai artists, designers, and developers. Create your own website and share traffic with each other."
-		},
-		{
-			"name": ".NET Thailand Website",
-			"repo": "https://github.com/dotnetthailand/dotnetthailand.github.io",
-			"description": "A website for .NET Thailand community to contribute and share knowledge to Thailand programmers."
-		},
-		{
-			"name": "Clean Architecture in .NET",
-			"repo": "https://github.com/T-T-Software-Solution/dotnet6.tutorial",
-			"description": "A sample project for Clean Architecture in .NET from Zero to Hero."
-		}
-	]
+  "projects": [
+    {
+      "name": "Thai Open Source Ring",
+      "repo": "https://www.github.com/creatorsgarten/open.source.in.th",
+      "description": "A webring of 🇹🇭 Open Source Projects and Developers",
+      "languages": [
+        "Astro",
+        "JavaScript",
+        "HTML"
+      ]
+    },
+    {
+      "name": "ThaiUI",
+      "repo": "https://www.github.com/oseda/thaiui",
+      "description": "Open-source UI library, design system, templates and plugins for Thai websites."
+    },
+    {
+      "name": "Elysia",
+      "repo": "https://www.github.com/elysiajs/elysia",
+      "description": "TypeScript framework supercharged by Bun with End-to-End Type Safety."
+    },
+    {
+      "name": "Contentsgarten",
+      "repo": "https://www.github.com/creatorsgarten/contentsgarten",
+      "description": "A modern, markdown-based cloud-native wiki engine"
+    },
+    {
+      "name": "techcal.dev",
+      "repo": "https://github.com/creatorsgarten/techcal.dev",
+      "description": "Calendar of Tech Event in your town"
+    },
+    {
+      "name": "Data Science Blocks",
+      "repo": "https://github.com/DataSciBlock/DataSciBlock",
+      "description": "Use blocks for data science. Graph, dataset, mutating data."
+    },
+    {
+      "name": "CodeJourney: Internship Stories",
+      "repo": "https://github.com/NongSnail/codejourney_internship_stories",
+      "description": "Collecting Internship Articles in the Programmer",
+      "languages": [
+        "Markdown"
+      ]
+    },
+    {
+      "name": "Parliament Watch",
+      "repo": "https://github.com/wevisdemo/parliament-watch",
+      "description": "Record and visualise the Thai parliament information including politicians, assemblies, bills, voting processes, and promises. (Free stickers for Hacktoberfest!)"
+    },
+    {
+      "name": "Joy Treasury",
+      "repo": "https://github.com/siriwatknp/joy-treasury",
+      "description": "Design inspiration to reality with Joy UI."
+    },
+    {
+      "name": "GPTForAnything",
+      "repo": "https://github.com/ksupasate/GPTForAnything",
+      "description": "a knowledge source repository dedicated to collecting various resources related to the application of GPT (Generative Pre-trained Transformer) in a wide range of domains"
+    },
+    {
+      "name": "Resumette",
+      "repo": "https://github.com/narze/resume",
+      "description": "Printer-friendly standard résumé. Any sections can be hidden to fit into a single page of paper."
+    },
+    {
+      "name": "URGROWTH",
+      "repo": "https://github.com/urgrowth/urgrowth",
+      "description": "We are a medium of creative youths with a passion for personal growth and development."
+    },
+    {
+      "name": "Chromatone",
+      "repo": "https://github.com/chromatone/chromatone.center",
+      "description": "Interactive design laboratory for communicating music with colors and shapes"
+    },
+    {
+      "name": "Nammatham",
+      "repo": "https://github.com/thaitype/nammatham",
+      "description": "Type-safe Azure Function Library, writing the Azure serverless function with confidence."
+    },
+    {
+      "name": "Thai Baht Text js",
+      "repo": "https://github.com/antronic/thai-baht-text-js",
+      "description": "JavaScript library for convert numerical or number values into Thai Baht text"
+    },
+    {
+      "name": "Killercoda Docker Lab",
+      "repo": "https://github.com/Cloud-NC-Engineering-Thailand/cloudnc-docker-lab",
+      "description": "The source code for Killercoda Docker Lab available here: https://killercoda.com/cloudnc"
+    },
+    {
+      "name": "TiDB Multi Kubernetes Cluster",
+      "repo": "https://github.com/Cloud-NC-Engineering-Thailand/tidb-multi-kube-cluster",
+      "description": "A setup guideline to demonstrate how we use multi Kubernetes clusters for database scaling"
+    },
+    {
+      "name": "Kubernetes Traffic Failover",
+      "repo": "https://github.com/Cloud-NC-Engineering-Thailand/kube-split-traffic-failover",
+      "description": "A setup guideline to demonstrate how we use another cluster for failover"
+    },
+    {
+      "name": "Base EKS on AWS",
+      "repo": "https://github.com/Cloud-NC-Engineering-Thailand/base-eks-cluster-aws",
+      "description": "A collection of Terraform modules to reduce complexity for getting started on AWS EKS"
+    },
+    {
+      "name": "Thai Citizen ID Validator",
+      "repo": "https://github.com/jukbot/thai-citizen-id-validator",
+      "description": "A Thai Citizen ID validator with 0 dependencies."
+    },
+    {
+      "name": "Zero Share",
+      "repo": "https://github.com/ntsd/zero-share",
+      "description": "A client-side secure P2P file sharing using WebRTC."
+    },
+    {
+      "name": "MongoDB Thailand User Group Website",
+      "repo": "https://github.com/mongodbthailand/mongodbthailand.github.io",
+      "description": "MongoDB knowledge sharing for Thailand community"
+    },
+    {
+      "name": "PyThaiNLP",
+      "repo": "https://github.com/PyThaiNLP/pythainlp",
+      "description": "Thai Natural Language Processing in Python"
+    },
+    {
+      "name": "Visual Assembly Canvas",
+      "repo": "https://github.com/heypoom/visual-assembly-canvas",
+      "description": "A visual canvas and bytecode virtual machine for writing assembly to build cool things. Create machines and connect them together."
+    },
+    {
+      "name": "Open Cybernetic Dance",
+      "repo": "https://github.com/mitmedialab/opencyberdance",
+      "description": "An open-source cybernetic dance system built with Three.js and motion capture, based on traditional Thai dances and performance arts, in collaboration with MIT Media Lab and Pichet Klunchun Dance Company."
+    },
+    {
+      "name": "Spending Visualizer",
+      "repo": "https://github.com/heypoom/spending-visualizer",
+      "description": "Parses your transactions from credit card and bank statements, and visualizes how you spend your money. Built with TypeScript, Svelte and SvelteKit."
+    },
+    {
+      "name": "EventKit",
+      "repo": "https://github.com/creatorsgarten/eventkit",
+      "description": "Organizing tech events doesn't have to be chaotic! A collection of tools and applications that help your team run events, from early planning to the chaotic event days. Built with TypeScript, React, Vite, Nest.js, GraphQL and Prisma."
+    },
+    {
+      "name": "Unicode Sprite",
+      "repo": "https://github.com/heypoom/unicode-sprite",
+      "description": "Turn a unicode character into a 4x4 binary matrix. Create cool drawings out of unicode strings."
+    },
+    {
+      "name": "Learn NVIM",
+      "repo": "https://github.com/socool/learn-nvim",
+      "description": "Learn NeoVim your personal development editor.By translating from English to Thai."
+    },
+    {
+      "name": "programming.in.th",
+      "repo": "https://github.com/programming-in-th/programming.in.th",
+      "description": "A website that provides you with the fundamentals of algorithmic problem-solving. Practice programming with various problems from Thailand."
+    },
+    {
+      "name": "Mini Game Craft Your Sword",
+      "repo": "https://github.com/tao-Isaman/craft-your-sword",
+      "description": "it's Mini Game it Github, Submit a PR with chosen materials and see if you can forge a legendary blade. Will you craft a gleaming sword or end up with mere shards? Try your luck in our virtual smithy!"
+    },
+    {
+      "name": "Vercel - multi branch deployment",
+      "repo": "https://github.com/kahnwong/vercel-multi-branch-deployment",
+      "description": "Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment."
+    },
+    {
+      "name": "WebMIDICon",
+      "repo": "https://github.com/dtinth/WebMIDICon",
+      "description": "Hackable web-based MIDI controller."
+    },
+    {
+      "name": "chord.source.in.th",
+      "repo": "https://github.com/dtinth/chordsource",
+      "description": "Quickly search for chords of Thai songs."
+    },
+    {
+      "name": "Hello World In Different Language!",
+      "repo": "https://www.github.com/RealNattawattHongthong/hello-world",
+      "description": "Hello World in different Language. Just for Fun"
+    },
+    {
+      "name": "cl-rocksdb",
+      "repo": "https://github.com/veer66/cl-rocksdb",
+      "description": "RocksDB binding for Common Lisp",
+      "languages": [
+        "Lisp"
+      ]
+    },
+    {
+      "name": "chamkho-pg",
+      "repo": "https://github.com/veer66/chamkho-pg",
+      "description": "chamkho-pg's objective is enabling PostgreSQL full-text searching on SE Asian languages. Currently, chamkho-pg supports Lao and Thai"
+    },
+    {
+      "name": "chamkho",
+      "repo": "https://codeberg.org/mekong-lang/chamkho",
+      "description": "Khmer, Lao, Myanmar, and Thai word segmentation/breaking library and command line"
+    },
+    {
+      "name": "seema",
+      "repo": "https://codeberg.org/mekong-lang/seema",
+      "description": "Khmer, Lao, Myanmar, and Thai word segmentation/breaking library in Python written in Rust"
+    },
+    {
+      "name": "Wonderful Webring",
+      "repo": "https://github.com/wonderfulsoftware/webring",
+      "description": "This “web ring” was created to encourage Thai artists, designers, and developers. Create your own website and share traffic with each other."
+    },
+    {
+      "name": ".NET Thailand Website",
+      "repo": "https://github.com/dotnetthailand/dotnetthailand.github.io",
+      "description": "A website for .NET Thailand community to contribute and share knowledge to Thailand programmers."
+    },
+    {
+      "name": "Clean Architecture in .NET",
+      "repo": "https://github.com/T-T-Software-Solution/dotnet6.tutorial",
+      "description": "A sample project for Clean Architecture in .NET from Zero to Hero."
+    }
+  ]
 }
