@@ -206,6 +206,11 @@
       "repo": "https://codeberg.org/mekong-lang/seema",
       "description": "Khmer, Lao, Myanmar, and Thai word segmentation/breaking library in Python written in Rust"
     },
+	{
+	  "name": "React useless hook",
+	  "repo": "https://github.com/narze/react-useless",
+	  "description": "A collection of React Custom Hooks that should not belong anywhere."
+	},
     {
       "name": "Wonderful Webring",
       "repo": "https://github.com/wonderfulsoftware/webring",
