@@ -4,7 +4,11 @@
       "name": "Thai Open Source Ring",
       "repo": "https://www.github.com/creatorsgarten/open.source.in.th",
       "description": "A webring of 🇹🇭 Open Source Projects and Developers",
-      "languages": ["Astro", "JavaScript", "HTML"]
+      "languages": [
+        "Astro",
+        "JavaScript",
+        "HTML"
+      ]
     },
     {
       "name": "ThaiUI",
@@ -34,7 +38,10 @@
     {
       "name": "CodeJourney: Internship Stories",
       "repo": "https://github.com/NongSnail/codejourney_internship_stories",
-      "description": "Collecting Internship Articles in the Programmer"
+      "description": "Collecting Internship Articles in the Programmer",
+      "languages": [
+        "Markdown"
+      ]
     },
     {
       "name": "Parliament Watch",
@@ -179,7 +186,10 @@
     {
       "name": "cl-rocksdb",
       "repo": "https://github.com/veer66/cl-rocksdb",
-      "description": "RocksDB binding for Common Lisp"
+      "description": "RocksDB binding for Common Lisp",
+      "languages": [
+        "Lisp"
+      ]
     },
     {
       "name": "chamkho-pg",
@@ -192,25 +202,126 @@
       "description": "Khmer, Lao, Myanmar, and Thai word segmentation/breaking library and command line"
     },
     {
+      "name": "The Data Engineering Book (Thai)",
+      "repo": "https://github.com/thedataengineeringbook/thedataengineeringbook",
+      "description": "The Data Engineering Book for Thai Data Engineers (Thai version)"
+    },
+    {
       "name": "seema",
       "repo": "https://codeberg.org/mekong-lang/seema",
       "description": "Khmer, Lao, Myanmar, and Thai word segmentation/breaking library in Python written in Rust"
     },
     {
-			"name": "Wonderful Webring",
-			"repo": "https://github.com/wonderfulsoftware/webring",
-			"description": "This “web ring” was created to encourage Thai artists, designers, and developers. Create your own website and share traffic with each other."
+      "name": "Wonderful Webring",
+      "repo": "https://github.com/wonderfulsoftware/webring",
+      "description": "This “web ring” was created to encourage Thai artists, designers, and developers. Create your own website and share traffic with each other."
     },
-    		{
-			"name": ".NET Thailand Website",
-			"repo": "https://github.com/dotnetthailand/dotnetthailand.github.io",
-			"description": "A website for .NET Thailand community to contribute and share knowledge to Thailand programmers."
-		},
-		{
-			"name": "Clean Architecture in .NET",
-			"repo": "https://github.com/T-T-Software-Solution/dotnet6.tutorial",
-			"description": "A sample project for Clean Architecture in .NET from Zero to Hero."
-		}
+    {
+      "name": ".NET Thailand Website",
+      "repo": "https://github.com/dotnetthailand/dotnetthailand.github.io",
+      "description": "A website for .NET Thailand community to contribute and share knowledge to Thailand programmers."
+    },
+    {
+      "name": "SEA-EYE",
+      "repo": "https://github.com/vtno/seaeye",
+      "description": "a collection of useful Github actions and workflows used to build CI pipelines for TypeScript applications."
+    },
+    {
+      "name": "Clean Architecture in .NET",
+      "repo": "https://github.com/T-T-Software-Solution/dotnet6.tutorial",
+      "description": "A sample project for Clean Architecture in .NET from Zero to Hero."
+    },
+    {
+      "name": "Hand Detection control every things",
+      "repo": "https://github.com/alphapum/hand_detect_v89_kb",
+      "description": "Detection hand and posture send data to mqtt to board KidBright"
+    },
+    {
+      "name": "UUID Clipboard",
+      "repo": "https://github.com/oat9002/uuid-clipboard",
+      "description": "Auto generate UUID and copy to clipboard by golang."
+    },
+    {
+      "name": "ohmyps-git-alias",
+      "repo": "https://github.com/ReiiYuki/ohmyps-git-alias",
+      "description": "oh my zsh Git alias liked but on Powershell",
+      "languages": [
+        "Powershell"
+      ]
+    },
+    {
+      "name": "On This Day",
+      "repo": "https://github.com/n-jaisabai/on-this-day",
+      "description": "Curate historical events for each day in Markdown format, featuring the date and concise event descriptions for easy exploration of notable moments in history."
+    },
+    {
+      "name": "totp",
+      "repo": "https://github.com/kahnwong/totp",
+      "description": "CLI TOTP token generator with autocomplete."
+    },
+    {
+      "name": "libdatrie",
+      "repo": "https://github.com/tlwg/libdatrie",
+      "description": "Double-Array Trie Library"
+    },
+    {
+      "name": "libthai",
+      "repo": "https://github.com/tlwg/libthai",
+      "description": "LibThai is a set of Thai language support routines."
+    },
+    {
+      "name": "fonts-tlwg",
+      "repo": "https://github.com/tlwg/fonts-tlwg",
+      "description": "Fonts-TLWG is a collection of Thai scalable fonts available under free licenses."
+    },
+    {
+      "name": "scim-thai",
+      "repo": "https://github.com/tlwg/scim-thai",
+      "description": "This is SCIM IMEngine module for Thai, based on libthai library."
+    },
+    {
+      "name": "ibus-libthai",
+      "repo": "https://github.com/tlwg/ibus-libthai",
+      "description": "IBus-LibThai is a Thai input method engine for IBus, based on the LibThai library."
+    },
+    {
+      "name": "MNIST-REACT.JS",
+      "repo": "https://github.com/WasinUddy/MNIST-JS-Demo-Website",
+      "description": "Deploying Simple Python MNIST Tensorflow Model to an interactive React.js Website"
+    },
+    {
+      "name": "pgconn",
+      "repo": "https://github.com/kahnwong/pgconn",
+      "description": "pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is exited."
+    },
+    {
+      "name": "Metro Fare",
+      "repo": "https://github.com/hspotlight/metro-fare",
+      "description": "a software application for route navigation of Mass Transit System in Bangkok, Thailand."
+    },
+    {
+      "name": "OpenThaiGPT",
+      "repo": "https://github.com/OpenThaiGPT/openthaigpt",
+      "description": "OpenThaiGPT focuses on developing a Thai Chatbot system to have capabilities equivalent to ChatGPT, as well as being able to connect to external systems and be able to retrieve data flexibly. Easily expandable and customizable and developed into Free open source software for everyone."
+    },
+    {
+      "name": "Thai Law: Telegram Bot",
+      "repo": "https://github.com/itpcc/Thai-Law-Telegram-Bot",
+      "description": "A Telegram bot for search Thai Act article using a text from Krisdika. For quick and crude to search the law.",
+      "languages": [
+        "typescript",
+        "bun"
+      ]
+    },
+    {
+      "name": "go-thai-id-validator",
+      "repo": "https://github.com/auycro/go-thai-id-validator",
+      "description": "Golang thai id validator tool"
+    },
+    {
+      "name": "React useless hook",
+      "repo": "https://github.com/narze/react-useless",
+      "description": "A collection of React Custom Hooks that should not belong anywhere."
+    }
   ]
 }
-
