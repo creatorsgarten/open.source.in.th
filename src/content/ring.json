@@ -322,6 +322,11 @@
       "name": "React useless hook",
       "repo": "https://github.com/narze/react-useless",
       "description": "A collection of React Custom Hooks that should not belong anywhere."
+    },
+    {
+      "name": "Thai-tax-calculator-ver2566",
+      "repo": "https://github.com/WeloveMFP/Thai-tax-calculator-ver2566",
+      "description": "Thai Tax Calculator 2566 Version to calculate the Tax."
     }
   ]
 }
