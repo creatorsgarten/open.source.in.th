@@ -324,10 +324,10 @@
       "description": "A collection of React Custom Hooks that should not belong anywhere."
     },
     {
-	    "name": "AIwaifu",
-	    "repo": "https://github.com/HRNPH/AIwaifu",
-	    "description": "Open-Waifu open-sourced finetunable customizable simpable AI waifu inspired by neuro-sama Powered by Open-Sourced Model",
-	    "languages": ["python"]
+      "name": "AIwaifu",
+      "repo": "https://github.com/HRNPH/AIwaifu",
+      "description": "Open-Waifu open-sourced finetunable customizable simpable AI waifu inspired by neuro-sama Powered by Open-Sourced Model",
+      "languages": ["python"]
     }
   ]
 }
