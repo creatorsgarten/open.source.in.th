@@ -324,6 +324,11 @@
       "description": "A collection of React Custom Hooks that should not belong anywhere."
     },
     {
+      "name": "promise-until-tired",
+      "repo": "https://github.com/wongnai/promise-until-tired",
+      "description": "Too long unresolved promise is tired and I gonna give up. (Promise with timeout)"
+    },
+    {
       "name": "AIwaifu",
       "repo": "https://github.com/HRNPH/AIwaifu",
       "description": "Open-Waifu open-sourced finetunable customizable simpable AI waifu inspired by neuro-sama Powered by Open-Sourced Model",
