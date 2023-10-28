@@ -327,7 +327,9 @@
       "name": "AIwaifu",
       "repo": "https://github.com/HRNPH/AIwaifu",
       "description": "Open-Waifu open-sourced finetunable customizable simpable AI waifu inspired by neuro-sama Powered by Open-Sourced Model",
-      "languages": ["python"]
+      "languages": [
+        "python"
+      ]
     },
     {
       "name": "Thai-tax-calculator-ver2566",
