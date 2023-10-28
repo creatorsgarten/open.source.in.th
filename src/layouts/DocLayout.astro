@@ -1,21 +1,23 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import BaseHead from '../components/BaseHead.astro';
-
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import BaseHead from '../components/BaseHead.astro'
 
 const { menu, doc } = Astro.props
 
-const defaultCat = "Main"
+const defaultCat = 'Main'
 
-const nav = menu.map((x) => {
+const nav = menu
+	.map((x) => {
 		const splitted = x.id.split('/')
 		const cat = splitted.length === 1 ? '' : splitted[0]
 		return { ...x, cat }
 	})
 	.reduce((acc, cur) => {
 		const cat = cur.cat || defaultCat
-		cat in acc ? acc[cat].push([cur.data.title, cur.slug]) : (acc[cat] = [[cur.data.title, cur.slug]])
+		cat in acc
+			? acc[cat].push([cur.data.title, cur.slug])
+			: (acc[cat] = [[cur.data.title, cur.slug]])
 		return acc
 	}, {})
 ---
@@ -28,43 +30,50 @@ const nav = menu.map((x) => {
 	<body>
 		<Header />
 		<main>
-            <div class="ui-container md:hidden border-b-2 text-lg border-neutral-400 bg-neutral-100 mb-8 py-3 col-span-4">
-                Components
-            </div>
-            <div class="grid grid-cols-4 md:pt-12 ui-container mb-4">
-                <div class="hidden col-span-3 md:block md:col-span-1">
-                    <div class="grid gap-8">
-                        {
-                            [
-                                [defaultCat, nav[defaultCat]], 
-                                ...Object.entries(nav).filter(([k, _]) => k !== defaultCat)
-                            ].map(([k, v]) => {
-                                return <ul class="list-none grid gap-3">
-                                    <li class="font-medium text-lg">{k}</li>
-                                    {v.map(([title, slug]) => {
-                                        return <li><a href={`/${doc}/${slug}`}>{title}</a></li>
-                                    })}
-                                </ul>
-                            })
-                        }
-                    </div>
-                </div>
-                <div class="col-span-4 md:col-span-3 flex flex-col gap-8 text-lg leading-relaxed">
-                    <div class="prose prose-lg">
-                    <slot />
-                    </div>
-                </div>
-            </div>
-        </main>
+			<div
+				class="ui-container col-span-4 mb-8 border-b-2 border-neutral-400 bg-neutral-100 py-3 text-lg md:hidden"
+			>
+				Components
+			</div>
+			<div class="ui-container mb-4 grid grid-cols-4 md:pt-12">
+				<div class="col-span-3 hidden md:col-span-1 md:block">
+					<div class="grid gap-8">
+						{
+							[
+								[defaultCat, nav[defaultCat]],
+								...Object.entries(nav).filter(([k, _]) => k !== defaultCat)
+							].map(([k, v]) => {
+								return (
+									<ul class="grid list-none gap-3">
+										<li class="text-lg font-medium">{k}</li>
+										{v.map(([title, slug]) => {
+											return (
+												<li>
+													<a href={`/${doc}/${slug}`}>{title}</a>
+												</li>
+											)
+										})}
+									</ul>
+								)
+							})
+						}
+					</div>
+				</div>
+				<div class="col-span-4 flex flex-col gap-8 text-lg leading-relaxed md:col-span-3">
+					<div class="prose prose-lg">
+						<slot />
+					</div>
+				</div>
+			</div>
+		</main>
 		<Footer />
+		<style>
+			a {
+				@apply text-blue-800 underline hover:text-neutral-900 hover:decoration-2;
+			}
+			p {
+				max-width: 60ch;
+			}
+		</style>
 	</body>
 </html>
-
-<style>
-    a {
-        @apply text-blue-800 hover:text-neutral-900 underline hover:decoration-2;
-    }
-    p {
-        max-width: 60ch;
-    }
-</style>
