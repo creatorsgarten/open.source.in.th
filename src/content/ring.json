@@ -324,6 +324,12 @@
       "description": "A collection of React Custom Hooks that should not belong anywhere."
     },
     {
+      "name": "AIwaifu",
+      "repo": "https://github.com/HRNPH/AIwaifu",
+      "description": "Open-Waifu open-sourced finetunable customizable simpable AI waifu inspired by neuro-sama Powered by Open-Sourced Model",
+      "languages": ["python"]
+    },
+    {
       "name": "Thai-tax-calculator-ver2566",
       "repo": "https://github.com/WeloveMFP/Thai-tax-calculator-ver2566",
       "description": "Thai Tax Calculator 2566 Version to calculate the Tax."
