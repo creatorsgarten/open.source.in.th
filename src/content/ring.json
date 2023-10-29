@@ -350,6 +350,12 @@
       "name": "ESP-32 Ultimate Weather station",
       "repo": "https://github.com/WasinUddy/Homelab-Environments-Monitor",
       "description": "An advanced weather station powered by ESP-32 and BME-280. Features a locally-hosted web interface on the ESP-32 and offers long-term monitoring capabilities through Prometheus and Grafana."
+    },
+    {
+      "name": "proxyman-addons-type",
+      "repo": "https://github.com/wongnai/proxyman-addons-type",
+      "description": "Type definition for develop Proxyman scripting",
+      "languages": ["typescript"]
     }
   ]
 }
