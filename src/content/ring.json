@@ -355,7 +355,9 @@
       "name": "proxyman-addons-type",
       "repo": "https://github.com/wongnai/proxyman-addons-type",
       "description": "Type definition for develop Proxyman scripting",
-      "languages": ["typescript"]
+      "languages": [
+        "typescript"
+      ]
     }
   ]
 }
