@@ -1,0 +1,5 @@
+{
+    "name": "gode.js",
+    "repo": "https://github.com/godeProject/gode.js",
+    "description": "Node.js package that converts gibberish caused by Thai user forgetting to change their keyboard layout."
+}
