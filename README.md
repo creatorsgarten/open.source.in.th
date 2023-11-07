@@ -15,9 +15,11 @@
   "repo": "https://www.github.com/username/my-awesome-repo",
   "description": "My Awesome Repo is awesome!",
   "languages": [
-    "Used Programming Language",
+    "Used Programming Language 1",
+    "Used Programming Language 2"
     "Used Framework",
-    "Used Library"
+    "Used Library 1",
+    "Used Library 2",
   ]
 }
 ```
