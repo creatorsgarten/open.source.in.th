@@ -14,7 +14,11 @@
   "name": "My Awesome Repo",
   "repo": "https://www.github.com/username/my-awesome-repo",
   "description": "My Awesome Repo is awesome!",
-  "languages": ["Used Programming Language", "Used Framework", "Used Library"]
+  "languages": [
+    "Used Programming Language",
+    "Used Framework",
+    "Used Library"
+  ]
 }
 ```
 
