@@ -358,6 +358,11 @@
       "languages": [
         "Rust"
       ]
+    },
+    {
+      "name": "Cert Maker",
+      "repo": "https://github.com/chonla/certmaker",
+      "description": "A PDF certificate maker."
     }
   ]
 }
