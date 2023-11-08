@@ -2,11 +2,23 @@
 	<nav class="ui-container flex items-center justify-between">
 		<div>
 			<a href="/" class="highlight flex items-center justify-center gap-2 font-medium">
-				<img src="/logo.svg" class="hidden h-8 py-1 md:block" />
-				<h2 class="">Festival '23</h2>
+				<img src="/logo.svg" class="hidden h-8 py-1 md:block" alt="Logo" />
+				<h2>Festival '23</h2>
 			</a>
 		</div>
-		<div class="flex gap-1 md:gap-3">
+		<div class="md:hidden">
+			<button class="mobile-menu-button outline-none" id="button.mobile-menu-button">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path
+						d="M4 6h16M4 12h16M4 18h16"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"></path>
+				</svg>
+			</button>
+		</div>
+		<div class="hidden gap-1 md:flex md:gap-3">
 			<a class="highlight" href="/ring"><h3>Ring</h3></a>
 			<a class="highlight" href="/join"><h3>Join</h3></a>
 			<a class="highlight" href="/board"><h3>Board</h3></a>
@@ -15,4 +27,40 @@
 			>
 		</div>
 	</nav>
+	<div class="mobile-menu hidden">
+		<ul>
+			<li class="active">
+				<a
+					href="/ring"
+					class="block px-2 py-4 text-sm transition duration-300 hover:bg-bosf hover:text-white"
+					>Ring</a
+				>
+			</li>
+			<li>
+				<a
+					href="/join"
+					class="block px-2 py-4 text-sm transition duration-300 hover:bg-bosf hover:text-white"
+					>Join</a
+				>
+			</li>
+			<li>
+				<a
+					href="/board"
+					class="block px-2 py-4 text-sm transition duration-300 hover:bg-bosf hover:text-white"
+					>Board</a
+				>
+			</li>
+			<li>
+				<a
+					href="https://discord.com/invite/vcpXckaTSF"
+					class="block px-2 py-4 text-sm transition duration-300 hover:bg-bosf hover:text-white"
+					>Discord ↗</a
+				>
+			</li>
+		</ul>
+	</div>
 </header>
+
+<script>
+	import '../../scripts/actions/menu'
+</script>
