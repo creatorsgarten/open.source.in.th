@@ -352,6 +352,14 @@
       "description": "An advanced weather station powered by ESP-32 and BME-280. Features a locally-hosted web interface on the ESP-32 and offers long-term monitoring capabilities through Prometheus and Grafana."
     },
     {
+      "name": "proxyman-addons-type",
+      "repo": "https://github.com/wongnai/proxyman-addons-type",
+      "description": "Type definition for develop Proxyman scripting",
+      "languages": [
+        "typescript"
+      ]
+    },
+    {
       "name": "Easy Proxy",
       "repo": "https://github.com/Aitthi/easy-proxy",
       "description": "Easy Proxy, a simple proxy server designed to provide essential features for network traffic management and proxying.",
