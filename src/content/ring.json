@@ -358,6 +358,19 @@
       "languages": [
         "typescript"
       ]
+    },
+    {
+      "name": "Easy Proxy",
+      "repo": "https://github.com/Aitthi/easy-proxy",
+      "description": "Easy Proxy, a simple proxy server designed to provide essential features for network traffic management and proxying.",
+      "languages": [
+        "Rust"
+      ]
+    },
+    {
+      "name": "Cert Maker",
+      "repo": "https://github.com/chonla/certmaker",
+      "description": "A PDF certificate maker."
     }
   ]
 }
