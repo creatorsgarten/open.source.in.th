@@ -382,7 +382,7 @@
       "repo": "https://github.com/atippaz/pwa-badboyz",
       "description": "A WebApplacation for badminton matches. You can choose the number of bad courts. and the number of players in the team Interested in using it at https://badminton.atipnasakun.online/",
       "languages": [
-        "vue.js"
+        "Vue.js"
       ]
     }
   ]
