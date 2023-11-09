@@ -378,11 +378,12 @@
       "description": "A PDF certificate maker."
     },
     {
-      "name": "pwa-badboyz",
-      "repo": "https://github.com/atippaz/pwa-badboyz",
-      "description": "A WebApplacation for badminton matches. You can choose the number of bad courts. and the number of players in the team Interested in using it at https://badminton.atipnasakun.online/",
+      "name": "botdiscord",
+      "repo": "https://github.com/atippaz/botdiscord",
+      "description": "It is a Discord bot developed with javascript and discord.js .that is used with a group of friends It has the function of sending messages to call friends. Or move friends in the voice room back and forth so that friends can hear (shake)",
       "languages": [
-        "vue.js",
+        "JavaScript",
+        "Discord.js"
       ]
     }
   ]
