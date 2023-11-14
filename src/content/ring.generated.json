@@ -1,3 +1,12 @@
 {
-  "projects": []
+  "projects": [
+    {
+      "name": "zero-share",
+      "repo": "https://github.com/ntsd/zero-share",
+      "description": "A client-side secure P2P file sharing using WebRTC.",
+      "languages": [
+        "Svelte"
+      ]
+    }
+  ]
 }

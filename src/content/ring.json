@@ -384,7 +384,37 @@
       "languages": [
         "JavaScript",
         "Discord.js"
+    },
+    {
+      "name": "Arcade Game",
+      "repo": "https://github.com/atippaz/DiceDualGame",
+      "description": "It is an online game that can be controlled through IOT. At present, the game that has been completed is XO Game and it's being developed further. You can play at https://arcade.atipnasakun.online",
+      "languages": [
+        "JavaScript",
+        "C",
+        "Vue.js",
+        "Express",
+        "Socket-io",
+        "Mqtt.js",
+        "Mongoose"
+    },
+    {
+      "name": "Bad Boyz",
+      "repo": "https://github.com/atippaz/pwa-badboyz",
+      "description": "A web application for badminton matches. You can choose the number of bad courts. and the number of players in the team. Use it at https://badminton.atipnasakun.online",
+      "languages": [
+        "Vue.js"
       ]
+    },
+    {
+      "name": "Cross Clipboard",
+      "repo": "https://github.com/ntsd/cross-clipboard",
+      "description": "An open source cross-platform clipboard sharing."
+    },
+    {
+      "name": "svelte-tex",
+      "repo": "https://github.com/ntsd/svelte-tex",
+      "description": "Svelte component to convert TeX/LaTeX to MathML or SVG."
     }
   ]
 }
