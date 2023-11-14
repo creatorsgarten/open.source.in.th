@@ -378,6 +378,14 @@
       "description": "A PDF certificate maker."
     },
     {
+      "name": "Bot Discord",
+      "repo": "https://github.com/atippaz/botdiscord",
+      "description": "It is a Discord bot developed with javascript and discord.js .that is used with a group of friends It has the function of sending messages to call friends. Or move friends in the voice room back and forth so that friends can hear (shake)",
+      "languages": [
+        "JavaScript",
+        "Discord.js"
+    },
+    {
       "name": "Arcade Game",
       "repo": "https://github.com/atippaz/DiceDualGame",
       "description": "It is an online game that can be controlled through IOT. At present, the game that has been completed is XO Game and it's being developed further. You can play at https://arcade.atipnasakun.online",
