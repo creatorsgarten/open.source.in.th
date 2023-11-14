@@ -378,6 +378,14 @@
       "description": "A PDF certificate maker."
     },
     {
+      "name": "Bad Boyz",
+      "repo": "https://github.com/atippaz/pwa-badboyz",
+      "description": "A web application for badminton matches. You can choose the number of bad courts. and the number of players in the team. Use it at https://badminton.atipnasakun.online",
+      "languages": [
+        "Vue.js"
+      ]
+    },
+    {
       "name": "Cross Clipboard",
       "repo": "https://github.com/ntsd/cross-clipboard",
       "description": "An open source cross-platform clipboard sharing."
