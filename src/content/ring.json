@@ -376,6 +376,16 @@
       "name": "Cert Maker",
       "repo": "https://github.com/chonla/certmaker",
       "description": "A PDF certificate maker."
+    },
+    {
+      "name": "Cross Clipboard",
+      "repo": "https://github.com/ntsd/cross-clipboard",
+      "description": "An open source cross-platform clipboard sharing."
+    },
+    {
+      "name": "svelte-tex",
+      "repo": "https://github.com/ntsd/svelte-tex",
+      "description": "Svelte component to convert TeX/LaTeX to MathML or SVG."
     }
   ]
 }
