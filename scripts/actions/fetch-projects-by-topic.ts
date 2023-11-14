@@ -3,14 +3,14 @@ import path from 'path'
 import process from 'node:process'
 import { fileURLToPath } from 'url'
 
-const topic = 'bosf23'
+const defaultTopicName = 'bangkok-open-source'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const filePath = path.resolve(__dirname, '../../src/content/ring.generated.json')
 
-async function fetchProjects(topicLimit: number): Promise<Repository[]> {
+async function fetchProjects(topicName: string, topicLimit: number): Promise<Repository[]> {
 	const repositories = [] as Repository[]
-	const query = `topic:${topic}`
+	const query = `topic:${topicName}`
 	const perPage = 100
 	if (topicLimit < perPage) {
 		topicLimit = perPage
@@ -62,8 +62,9 @@ function saveProjectsToJSON(projects: Project[]) {
 }
 
 async function main() {
-	const topicLimit = Number(process.argv[2] ?? 1000)
-	const repositories = await fetchProjects(topicLimit)
+	const topicName = process.argv[2] || defaultTopicName
+	const topicLimit = Number(process.argv[3] ?? 1000)
+	const repositories = await fetchProjects(topicName, topicLimit)
 	// TODO: should be nice to have repo's languages from Repository.languages_url not just Repository.language
 	const projects = repositories.map<Project>((repo) => ({
 		name: repo.name,
