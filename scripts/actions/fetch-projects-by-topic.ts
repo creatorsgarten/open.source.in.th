@@ -92,8 +92,6 @@ async function main() {
 		languages: [repo.language],
 		languages_url: repo.languages_url
 	}));
-
-	console.log(`Fetched ${projects.length} projects from ${topicName} topic`);
 	saveProjectsToJSON(projects)
 }
 
