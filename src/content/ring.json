@@ -384,6 +384,7 @@
       "languages": [
         "JavaScript",
         "Discord.js"
+      ]
     },
     {
       "name": "Arcade Game",
@@ -397,6 +398,7 @@
         "Socket-io",
         "Mqtt.js",
         "Mongoose"
+      ]
     },
     {
       "name": "Bad Boyz",
