@@ -6,33 +6,11 @@ import events from '../content/events.json'
 import sponsors from '../content/sponsors.json'
 import CardLink from '../components/CardLink.astro'
 import EventCard from '../components/EventCard.astro'
+import { fetchProjects, shuffleProject } from '../../scripts/actions/project'
+import { fetchEvent } from '../../scripts/actions/event'
 
-// TODO: refactor dedupe logic to separate file?
-// TODO: limit projects in index page
-const projects = [...ring.projects]
-for (const project of generatedRing.projects as typeof ring.projects) {
-	const index = projects.findIndex((x) => x.name === project.name)
-	if (index === -1) {
-		projects.push(project)
-	}
-}
-
-function shuffle<T>(array: T[]): T[] {
-	for (let i = array.length - 1; i > 0; i--) {
-		const j = Math.floor(Math.random() * (i + 1))
-		;[array[i], array[j]] = [array[j], array[i]]
-	}
-	return array
-}
-
-const event = [...events.events]
-	.filter((x, i, a) => a.findIndex((y) => y.name === x.name) === i)
-	.sort((a, b) => {
-		const aDate = new Date(a.date)
-		const bDate = new Date(b.date)
-		return aDate.getTime() - bDate.getTime()
-	})
-	.slice(0, 6) // Add this line to limit to 6 events
+const projects = fetchProjects([...ring.projects], [...generatedRing.projects])
+const event = fetchEvent([...events.events])
 ---
 
 <BaseLayout>
@@ -48,10 +26,16 @@ const event = [...events.events]
 			<h1 class="text-center text-3xl font-medium">1. Write code 💻</h1>
 			<div class="main-grid">
 				{
-					shuffle(projects)
+					shuffleProject(projects)
 						.slice(0, 6)
-						.map((x) => {
-							return <CardLink title={x.name} url={x.repo} description={x.description} />
+						.map((project) => {
+							return (
+								<CardLink
+									title={project.name}
+									url={project.repo}
+									description={project.description}
+								/>
+							)
 						})
 				}
 			</div>
@@ -63,8 +47,8 @@ const event = [...events.events]
 			<h1 class="text-center text-3xl font-medium">2. Join events 🙌</h1>
 			<div class="main-grid">
 				{
-					event.map((x) => {
-						return <EventCard events={x} />
+					event.map((event) => {
+						return <EventCard events={event} />
 					})
 				}
 			</div>

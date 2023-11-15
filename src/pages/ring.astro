@@ -3,15 +3,9 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 import ring from '../content/ring.json'
 import generatedRing from '../content/ring.generated.json'
 import CardLink from '../components/CardLink.astro'
+import { fetchProjects } from '../../scripts/actions/project'
 
-// TODO: refactor dedupe logic to separate file?
-const projects = [...ring.projects]
-for (const project of generatedRing.projects as typeof ring.projects) {
-	const index = projects.findIndex((x) => x.name === project.name)
-	if (index === -1) {
-		projects.push(project)
-	}
-}
+const projects = fetchProjects([...ring.projects], [...generatedRing.projects])
 ---
 
 <BaseLayout>

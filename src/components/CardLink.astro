@@ -19,7 +19,6 @@ const { title, url, description, languages = [] } = Astro.props
 		<p class="text-base">
 			{description}
 		</p>
-		<!-- TODO: Languages display as tags -->
 		{languages.length > 0 && <p>{languages.join(', ')}</p>}
 	</div>
 </div>
