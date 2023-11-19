@@ -1,9 +1,13 @@
 import fs from 'fs'
-import path from 'path'
 import process from 'node:process'
+import path from 'path'
 import { fileURLToPath } from 'url'
 
 const defaultTopicName = 'bangkok-open-source'
+
+interface Language {
+	[key: string]: number;
+}
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const filePath = path.resolve(__dirname, '../../src/content/ring.generated.json')
@@ -37,16 +41,30 @@ async function fetchPagedProjects(
 	page = 1,
 	perPage = 100
 ): Promise<SearchRepositoriesResponse> {
-	const url = new URL('https://api.github.com/search/repositories')
-	url.searchParams.set('q', query)
-	url.searchParams.set('page', `${page}`)
-	url.searchParams.set('per_page', `${perPage}`)
+	const url = new URL('https://api.github.com/search/repositories');
+	url.searchParams.set('q', query);
+	url.searchParams.set('page', `${page}`);
+	url.searchParams.set('per_page', `${perPage}`);
 
-	const resp = await fetch(url)
+	const resp = await fetch(url);
 	if (!resp.ok) {
-		throw new Error(`Failed to fetch paged projects: ${resp.status} ${await resp.text()}`)
+		throw new Error(`Failed to fetch paged projects: ${resp.status} ${await resp.text()}`);
 	}
-	return (await resp.json()) as SearchRepositoriesResponse
+	const result = (await resp.json()) as SearchRepositoriesResponse;
+
+	// Fetch languages for each repository
+	const repositoriesWithLanguages = await Promise.all(
+		result.items.map(async (repo) => {
+			const languagesResp = await fetch(repo.languages_url);
+			if (!languagesResp.ok) {
+				throw new Error(`Failed to fetch languages for ${repo.full_name}`);
+			}
+			const languages: Language = await languagesResp.json();
+			return { ...repo, languages: Object.keys(languages) };
+		})
+	);
+
+	return { ...result, items: repositoriesWithLanguages };
 }
 
 function saveProjectsToJSON(projects: Project[]) {
@@ -64,14 +82,15 @@ function saveProjectsToJSON(projects: Project[]) {
 async function main() {
 	const topicName = process.argv[2] || defaultTopicName
 	const topicLimit = Number(process.argv[3] ?? 1000)
-	const repositories = await fetchProjects(topicName, topicLimit)
-	// TODO: should be nice to have repo's languages from Repository.languages_url not just Repository.language
+	const repositories = await fetchProjects(topicName, topicLimit);
+
 	const projects = repositories.map<Project>((repo) => ({
 		name: repo.name,
 		repo: repo.html_url,
 		description: repo.description,
-		languages: [repo.language]
-	}))
+		languages: [repo.language],
+		languages_url: repo.languages_url
+	}));
 	saveProjectsToJSON(projects)
 }
 
@@ -175,5 +194,6 @@ interface Project {
 	name: string
 	repo: string
 	description: string
-	languages: string[]
+	languages?: string[]
+	languages_url?: string
 }

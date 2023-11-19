@@ -11,7 +11,10 @@ const { title, url, description, languages = [] } = Astro.props
 
 <div class="project-card group relative focus-within:scale-[1.01]">
 	<div class="grid gap-2">
-		<a href={url} class="after:absolute after:inset-0 after:content-[''] after:focus:border after:focus:transition-all focus:after:border-bosf/50">
+		<a
+			href={url}
+			class="after:absolute after:inset-0 after:content-[''] after:focus:border focus:after:border-bosf/50 after:focus:transition-all"
+		>
 			<h3 class="text-2xl font-medium transition-all">
 				{title}
 			</h3>
@@ -19,7 +22,10 @@ const { title, url, description, languages = [] } = Astro.props
 		<p class="text-base">
 			{description}
 		</p>
-		<!-- TODO: Languages display as tags -->
-		{languages.length > 0 && <p>{languages.join(', ')}</p>}
+		{
+			languages.length > 0 && (
+				<p class="text-base my-1 font-medium text-bosf">{languages.join(', ')}</p>
+			)
+		}
 	</div>
 </div>
